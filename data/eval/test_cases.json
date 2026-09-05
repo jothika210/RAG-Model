@@ -1,0 +1,144 @@
+{
+  "known_answer_baseline": [
+    {
+      "id": "q1", "question": "What is the carry-over cap for a probationary employee under HR-207 section 4.2?",
+      "region": "APAC", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-207", "expected_section": "4.2",
+      "problem_type": "known_answer_baseline"
+    },
+    {
+      "id": "q2", "question": "Under HR-207, what is the carry-over cap for a full-time confirmed employee in India?",
+      "region": "APAC", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-207", "expected_section": "3",
+      "problem_type": "known_answer_baseline"
+    },
+    {
+      "id": "q3", "question": "How many days of company-paid sick leave is an EMEA employee entitled to per calendar year under HR-203?",
+      "region": "EMEA", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-203", "expected_section": "2.1",
+      "problem_type": "known_answer_baseline"
+    },
+    {
+      "id": "q4", "question": "Under HR-203, what certification is required for a sick absence of 4 to 7 days?",
+      "region": "EMEA", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-203", "expected_section": "3",
+      "problem_type": "known_answer_baseline"
+    },
+    {
+      "id": "q5", "question": "How many weeks of paid parental leave is a full-time secondary caregiver entitled to under HR-205?",
+      "region": "AMER", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-205", "expected_section": "3",
+      "problem_type": "known_answer_baseline"
+    },
+    {
+      "id": "q6", "question": "Under HR-211, what is the carry-over cap for a full-time confirmed employee in Brazil, and why can't it be reduced?",
+      "region": "AMER", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-211", "expected_section": "2",
+      "problem_type": "known_answer_baseline"
+    },
+    {
+      "id": "q7", "question": "Under HR-209, if a remote employee's scheduled annual leave day coincides with a public holiday in their home country, what happens to that leave day?",
+      "region": "EMEA", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-209", "expected_section": "2.2",
+      "problem_type": "known_answer_baseline"
+    },
+    {
+      "id": "q8", "question": "Under HR-201, what is the special carry-over exception for full-time confirmed employees based in Singapore, and how many days can they carry over?",
+      "region": "APAC", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-201", "expected_section": "4.2",
+      "problem_type": "known_answer_baseline"
+    }
+  ],
+  "out_of_corpus_baseline": [
+    {
+      "id": "ooc1", "question": "What is the company's sabbatical leave policy after 5 years of continuous service?",
+      "region": null, "strategy": "structure_aware",
+      "expected_refused": true,
+      "problem_type": "out_of_corpus_baseline"
+    },
+    {
+      "id": "ooc2", "question": "Can an employee take annual leave during their notice period after resignation?",
+      "region": null, "strategy": "structure_aware",
+      "expected_refused": true,
+      "problem_type": "out_of_corpus_baseline"
+    },
+    {
+      "id": "ooc3", "question": "What is the bereavement leave entitlement for APAC employees?",
+      "region": null, "strategy": "structure_aware",
+      "expected_refused": true,
+      "problem_type": "out_of_corpus_baseline"
+    }
+  ],
+  "regression_cases": [
+    {
+      "id": "t016", "question": "What paperwork do I need for a sick day that's 5 days long under HR-203?",
+      "region": "EMEA", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-203", "expected_section": "3",
+      "problem_type": "false_refusal_near_threshold",
+      "note": "Week 5 finding: under the semantic-only top-1 gate this refuses (top score 0.716 < 0.72), even though HR-203 sec.3 (the certification table) is retrieved at rank 2. Expected outcome recorded here is what SHOULD happen once the top-3 gate fix (Week 6's one change) is applied -- this case is expected to FAIL under 'before' and PASS under 'after'."
+    },
+    {
+      "id": "t002", "question": "How many days of company-paid sick leave is an EMEA employee entitled to per calendar year under HR-203?",
+      "region": "EMEA", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-203", "expected_section": "2.1",
+      "problem_type": "citation_drift",
+      "note": "Week 5 finding: top-ranked fetch was an unrelated HR-209 chunk; answer correctly cited the lower-ranked HR-203 chunk instead. Regression-guards that this correct behavior doesn't get worse."
+    },
+    {
+      "id": "t015", "question": "How much sick pay from the company do EMEA staff get each year, per HR-203?",
+      "region": "EMEA", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-203", "expected_section": "2.1",
+      "problem_type": "citation_drift",
+      "note": "Week 5 finding: cited chunk (sec 2.1) was rank 2, not rank 1 (rank 1 was sec 2.3, uncited). Fact was still correct."
+    },
+    {
+      "id": "t017", "question": "As the non-primary parent, how much paid leave do I get for parental leave under HR-205?",
+      "region": "AMER", "strategy": "structure_aware",
+      "expected_refused": false, "expected_policy_id": "HR-205", "expected_section": "2.2",
+      "problem_type": "citation_drift",
+      "note": "Week 5 finding: cited chunk (sec 2.2, secondary caregiver) was rank 3. This is also the seed-7 replay-proof trace from notes.md."
+    },
+    {
+      "id": "t034", "question": "What is the carry-over cap for a full-time confirmed employee in India under HR-207?",
+      "region": "AMER", "strategy": "structure_aware",
+      "expected_refused": true,
+      "problem_type": "region_mismatch_refusal",
+      "note": "Week 5 finding: India is APAC but region filter applied was AMER (deliberate mismatch). Correct refusal -- regression-guards this stays correct."
+    },
+    {
+      "id": "t035", "question": "How many weeks of parental leave does a secondary caregiver get under HR-205?",
+      "region": "EMEA", "strategy": "structure_aware",
+      "expected_refused": true,
+      "problem_type": "region_mismatch_refusal",
+      "note": "Week 5 finding: HR-205 is AMER but region filter applied was EMEA (deliberate mismatch). Correct refusal."
+    },
+    {
+      "id": "t008", "question": "What is the company's sabbatical leave policy after 5 years of continuous service?",
+      "region": null, "strategy": "structure_aware",
+      "expected_refused": true,
+      "problem_type": "vague_or_malformed_refusal",
+      "note": "Duplicate of ooc1 by question text but included here to keep the vague_or_malformed_refusal problem_type populated with a real Week 5 trace_id (t008)."
+    },
+    {
+      "id": "t039", "question": "hr policy question please help",
+      "region": null, "strategy": "structure_aware",
+      "expected_refused": true,
+      "problem_type": "vague_or_malformed_refusal",
+      "note": "Week 5 finding: vague, no identifiable policy fact. Correct refusal."
+    },
+    {
+      "id": "t040", "question": "what about the thing with the days",
+      "region": null, "strategy": "structure_aware",
+      "expected_refused": true,
+      "problem_type": "vague_or_malformed_refusal",
+      "note": "Week 5 finding: extremely vague. Correct refusal."
+    },
+    {
+      "id": "t041", "question": "policy",
+      "region": null, "strategy": "structure_aware",
+      "expected_refused": true,
+      "problem_type": "vague_or_malformed_refusal",
+      "note": "Week 5 finding: single word, no specific ask. Correct refusal."
+    }
+  ]
+}

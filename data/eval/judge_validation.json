@@ -1,0 +1,78 @@
+{
+  "trace_ids": [
+    "t000",
+    "t001",
+    "t005",
+    "t006",
+    "t007",
+    "t002",
+    "t015",
+    "t017",
+    "t014",
+    "t019",
+    "t030"
+  ],
+  "human_grades": {
+    "t000": "PASS",
+    "t001": "PASS",
+    "t005": "PASS",
+    "t006": "PASS",
+    "t007": "PASS",
+    "t002": "PASS",
+    "t015": "PASS",
+    "t017": "PASS",
+    "t014": "PASS",
+    "t019": "PASS",
+    "t030": "PASS"
+  },
+  "judge_grades": {
+    "t000": {
+      "verdict": "PASS",
+      "reason": "The answer accurately reflects the 2-day carry-over cap for probationary employees as stated in the source text."
+    },
+    "t001": {
+      "verdict": "PASS",
+      "reason": "The answer accurately reflects the carry-over cap stated in the source text."
+    },
+    "t005": {
+      "verdict": "PASS",
+      "reason": "Every claim in the answer is supported by the source text."
+    },
+    "t006": {
+      "verdict": "PASS",
+      "reason": "Every claim in the answer is directly supported by the source text."
+    },
+    "t007": {
+      "verdict": "PASS",
+      "reason": "Every claim in the answer is supported by the source text."
+    },
+    "t002": {
+      "verdict": "PASS",
+      "reason": "The answer accurately reflects the information provided in the source text."
+    },
+    "t015": {
+      "verdict": "PASS",
+      "reason": "The answer accurately reflects the information provided in the source text."
+    },
+    "t017": {
+      "verdict": "PASS",
+      "reason": "The answer accurately reflects the information provided in the source text."
+    },
+    "t014": {
+      "verdict": "PASS",
+      "reason": "The answer accurately reflects the carry-over limit for full-time confirmed employees in India as stated in the source text."
+    },
+    "t019": {
+      "verdict": "PASS",
+      "reason": "The answer accurately reflects the information provided in the source text."
+    },
+    "t030": {
+      "verdict": "PASS",
+      "reason": "The answer accurately reflects the information provided in the source text."
+    }
+  },
+  "agreements": 11,
+  "total": 11,
+  "agreement_rate": 1.0,
+  "disagreements": []
+}

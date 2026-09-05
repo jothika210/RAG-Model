@@ -1,0 +1,613 @@
+{
+  "gate_mode": "top1",
+  "cases": [
+    {
+      "id": "q1",
+      "problem_type": "known_answer_baseline",
+      "question": "What is the carry-over cap for a probationary employee under HR-207 section 4.2?",
+      "refused": false,
+      "reason": null,
+      "top_score": 0.8969946013920437,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": true,
+          "reason": "answered as expected"
+        },
+        {
+          "name": "citation_present",
+          "passed": true,
+          "reason": "1 citation(s) present"
+        },
+        {
+          "name": "citation_resolves",
+          "passed": true,
+          "reason": "all citations resolve to retrieved chunks"
+        },
+        {
+          "name": "citation_matches_known_answer",
+          "passed": true,
+          "reason": "citation matches known-correct source"
+        }
+      ],
+      "rule_pass": true,
+      "judge": {
+        "verdict": "PASS",
+        "reason": "The answer accurately reflects the information provided in the source text."
+      },
+      "overall_pass": true
+    },
+    {
+      "id": "q2",
+      "problem_type": "known_answer_baseline",
+      "question": "Under HR-207, what is the carry-over cap for a full-time confirmed employee in India?",
+      "refused": false,
+      "reason": null,
+      "top_score": 0.7898978839162064,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": true,
+          "reason": "answered as expected"
+        },
+        {
+          "name": "citation_present",
+          "passed": true,
+          "reason": "1 citation(s) present"
+        },
+        {
+          "name": "citation_resolves",
+          "passed": true,
+          "reason": "all citations resolve to retrieved chunks"
+        },
+        {
+          "name": "citation_matches_known_answer",
+          "passed": true,
+          "reason": "citation matches known-correct source"
+        }
+      ],
+      "rule_pass": true,
+      "judge": {
+        "verdict": "PASS",
+        "reason": "The answer accurately states the carry-over cap of 10 days for a full-time confirmed employee in India as supported by the source text."
+      },
+      "overall_pass": true
+    },
+    {
+      "id": "q3",
+      "problem_type": "known_answer_baseline",
+      "question": "How many days of company-paid sick leave is an EMEA employee entitled to per calendar year under HR-203?",
+      "refused": false,
+      "reason": null,
+      "top_score": 0.7884693983396542,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": true,
+          "reason": "answered as expected"
+        },
+        {
+          "name": "citation_present",
+          "passed": true,
+          "reason": "1 citation(s) present"
+        },
+        {
+          "name": "citation_resolves",
+          "passed": true,
+          "reason": "all citations resolve to retrieved chunks"
+        },
+        {
+          "name": "citation_matches_known_answer",
+          "passed": true,
+          "reason": "citation matches known-correct source"
+        }
+      ],
+      "rule_pass": true,
+      "judge": {
+        "verdict": "PASS",
+        "reason": "The answer accurately reflects the information provided in the source text."
+      },
+      "overall_pass": true
+    },
+    {
+      "id": "q4",
+      "problem_type": "known_answer_baseline",
+      "question": "Under HR-203, what certification is required for a sick absence of 4 to 7 days?",
+      "refused": false,
+      "reason": null,
+      "top_score": 0.7556258782089238,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": true,
+          "reason": "answered as expected"
+        },
+        {
+          "name": "citation_present",
+          "passed": true,
+          "reason": "1 citation(s) present"
+        },
+        {
+          "name": "citation_resolves",
+          "passed": true,
+          "reason": "all citations resolve to retrieved chunks"
+        },
+        {
+          "name": "citation_matches_known_answer",
+          "passed": true,
+          "reason": "citation matches known-correct source"
+        }
+      ],
+      "rule_pass": true,
+      "judge": {
+        "verdict": "PASS",
+        "reason": "The answer accurately reflects the requirement for a doctor's note for a sick absence of 4 to 7 days as stated in the source text."
+      },
+      "overall_pass": true
+    },
+    {
+      "id": "q5",
+      "problem_type": "known_answer_baseline",
+      "question": "How many weeks of paid parental leave is a full-time secondary caregiver entitled to under HR-205?",
+      "refused": false,
+      "reason": null,
+      "top_score": 0.8843848505041434,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": true,
+          "reason": "answered as expected"
+        },
+        {
+          "name": "citation_present",
+          "passed": true,
+          "reason": "1 citation(s) present"
+        },
+        {
+          "name": "citation_resolves",
+          "passed": true,
+          "reason": "all citations resolve to retrieved chunks"
+        },
+        {
+          "name": "citation_matches_known_answer",
+          "passed": false,
+          "reason": "expected a citation to HR-205 sec.3, got [('HR-205', '2.2')]"
+        }
+      ],
+      "rule_pass": false,
+      "judge": {
+        "verdict": "PASS",
+        "reason": "The answer accurately reflects the information provided in the source text."
+      },
+      "overall_pass": false
+    },
+    {
+      "id": "q6",
+      "problem_type": "known_answer_baseline",
+      "question": "Under HR-211, what is the carry-over cap for a full-time confirmed employee in Brazil, and why can't it be reduced?",
+      "refused": false,
+      "reason": null,
+      "top_score": 0.8346075245504319,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": true,
+          "reason": "answered as expected"
+        },
+        {
+          "name": "citation_present",
+          "passed": true,
+          "reason": "1 citation(s) present"
+        },
+        {
+          "name": "citation_resolves",
+          "passed": true,
+          "reason": "all citations resolve to retrieved chunks"
+        },
+        {
+          "name": "citation_matches_known_answer",
+          "passed": false,
+          "reason": "expected a citation to HR-211 sec.2, got [('HR-211', '2.1')]"
+        }
+      ],
+      "rule_pass": false,
+      "judge": {
+        "verdict": "PASS",
+        "reason": "Every claim in the answer is supported by the source text."
+      },
+      "overall_pass": false
+    },
+    {
+      "id": "q7",
+      "problem_type": "known_answer_baseline",
+      "question": "Under HR-209, if a remote employee's scheduled annual leave day coincides with a public holiday in their home country, what happens to that leave day?",
+      "refused": false,
+      "reason": null,
+      "top_score": 0.8066810896116767,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": true,
+          "reason": "answered as expected"
+        },
+        {
+          "name": "citation_present",
+          "passed": true,
+          "reason": "1 citation(s) present"
+        },
+        {
+          "name": "citation_resolves",
+          "passed": true,
+          "reason": "all citations resolve to retrieved chunks"
+        },
+        {
+          "name": "citation_matches_known_answer",
+          "passed": true,
+          "reason": "citation matches known-correct source"
+        }
+      ],
+      "rule_pass": true,
+      "judge": {
+        "verdict": "PASS",
+        "reason": "Every claim in the answer is directly supported by the source text."
+      },
+      "overall_pass": true
+    },
+    {
+      "id": "q8",
+      "problem_type": "known_answer_baseline",
+      "question": "Under HR-201, what is the special carry-over exception for full-time confirmed employees based in Singapore, and how many days can they carry over?",
+      "refused": false,
+      "reason": null,
+      "top_score": 0.8220429981333648,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": true,
+          "reason": "answered as expected"
+        },
+        {
+          "name": "citation_present",
+          "passed": true,
+          "reason": "1 citation(s) present"
+        },
+        {
+          "name": "citation_resolves",
+          "passed": true,
+          "reason": "all citations resolve to retrieved chunks"
+        },
+        {
+          "name": "citation_matches_known_answer",
+          "passed": true,
+          "reason": "citation matches known-correct source"
+        }
+      ],
+      "rule_pass": true,
+      "judge": {
+        "verdict": "PASS",
+        "reason": "Every claim in the answer is supported by the source text."
+      },
+      "overall_pass": true
+    },
+    {
+      "id": "ooc1",
+      "problem_type": "out_of_corpus_baseline",
+      "question": "What is the company's sabbatical leave policy after 5 years of continuous service?",
+      "refused": true,
+      "reason": "low_retrieval_confidence",
+      "top_score": 0.7074729016510145,
+      "rule_checks": [
+        {
+          "name": "refused_when_expected",
+          "passed": true,
+          "reason": "refused as expected"
+        }
+      ],
+      "rule_pass": true,
+      "judge": null,
+      "overall_pass": true
+    },
+    {
+      "id": "ooc2",
+      "problem_type": "out_of_corpus_baseline",
+      "question": "Can an employee take annual leave during their notice period after resignation?",
+      "refused": true,
+      "reason": "model_declined",
+      "top_score": 0.7439069306251231,
+      "rule_checks": [
+        {
+          "name": "refused_when_expected",
+          "passed": true,
+          "reason": "refused as expected"
+        }
+      ],
+      "rule_pass": true,
+      "judge": null,
+      "overall_pass": true
+    },
+    {
+      "id": "ooc3",
+      "problem_type": "out_of_corpus_baseline",
+      "question": "What is the bereavement leave entitlement for APAC employees?",
+      "refused": true,
+      "reason": "model_declined",
+      "top_score": 0.7602242549725244,
+      "rule_checks": [
+        {
+          "name": "refused_when_expected",
+          "passed": true,
+          "reason": "refused as expected"
+        }
+      ],
+      "rule_pass": true,
+      "judge": null,
+      "overall_pass": true
+    },
+    {
+      "id": "t016",
+      "problem_type": "false_refusal_near_threshold",
+      "question": "What paperwork do I need for a sick day that's 5 days long under HR-203?",
+      "refused": true,
+      "reason": "low_retrieval_confidence",
+      "top_score": 0.7160241341538831,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": false,
+          "reason": "expected an answer but got refused (reason=low_retrieval_confidence, top_score=0.7160241341538831)"
+        }
+      ],
+      "rule_pass": false,
+      "judge": null,
+      "overall_pass": false
+    },
+    {
+      "id": "t002",
+      "problem_type": "citation_drift",
+      "question": "How many days of company-paid sick leave is an EMEA employee entitled to per calendar year under HR-203?",
+      "refused": false,
+      "reason": null,
+      "top_score": 0.7884693983396542,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": true,
+          "reason": "answered as expected"
+        },
+        {
+          "name": "citation_present",
+          "passed": true,
+          "reason": "1 citation(s) present"
+        },
+        {
+          "name": "citation_resolves",
+          "passed": true,
+          "reason": "all citations resolve to retrieved chunks"
+        },
+        {
+          "name": "citation_matches_known_answer",
+          "passed": true,
+          "reason": "citation matches known-correct source"
+        }
+      ],
+      "rule_pass": true,
+      "judge": {
+        "verdict": "PASS",
+        "reason": "The answer accurately reflects the information provided in the source text."
+      },
+      "overall_pass": true
+    },
+    {
+      "id": "t015",
+      "problem_type": "citation_drift",
+      "question": "How much sick pay from the company do EMEA staff get each year, per HR-203?",
+      "refused": false,
+      "reason": null,
+      "top_score": 0.737589983183392,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": true,
+          "reason": "answered as expected"
+        },
+        {
+          "name": "citation_present",
+          "passed": true,
+          "reason": "1 citation(s) present"
+        },
+        {
+          "name": "citation_resolves",
+          "passed": true,
+          "reason": "all citations resolve to retrieved chunks"
+        },
+        {
+          "name": "citation_matches_known_answer",
+          "passed": true,
+          "reason": "citation matches known-correct source"
+        }
+      ],
+      "rule_pass": true,
+      "judge": {
+        "verdict": "PASS",
+        "reason": "The answer accurately reflects the information provided in the source text."
+      },
+      "overall_pass": true
+    },
+    {
+      "id": "t017",
+      "problem_type": "citation_drift",
+      "question": "As the non-primary parent, how much paid leave do I get for parental leave under HR-205?",
+      "refused": false,
+      "reason": null,
+      "top_score": 0.7673104146520096,
+      "rule_checks": [
+        {
+          "name": "answered_when_expected",
+          "passed": true,
+          "reason": "answered as expected"
+        },
+        {
+          "name": "citation_present",
+          "passed": true,
+          "reason": "1 citation(s) present"
+        },
+        {
+          "name": "citation_resolves",
+          "passed": true,
+          "reason": "all citations resolve to retrieved chunks"
+        },
+        {
+          "name": "citation_matches_known_answer",
+          "passed": true,
+          "reason": "citation matches known-correct source"
+        }
+      ],
+      "rule_pass": true,
+      "judge": {
+        "verdict": "PASS",
+        "reason": "The answer accurately reflects the information provided in the source text."
+      },
+      "overall_pass": true
+    },
+    {
+      "id": "t034",
+      "problem_type": "region_mismatch_refusal",
+      "question": "What is the carry-over cap for a full-time confirmed employee in India under HR-207?",
+      "refused": true,
+      "reason": "model_declined",
+      "top_score": 0.7571598775773061,
+      "rule_checks": [
+        {
+          "name": "refused_when_expected",
+          "passed": true,
+          "reason": "refused as expected"
+        }
+      ],
+      "rule_pass": true,
+      "judge": null,
+      "overall_pass": true
+    },
+    {
+      "id": "t035",
+      "problem_type": "region_mismatch_refusal",
+      "question": "How many weeks of parental leave does a secondary caregiver get under HR-205?",
+      "refused": true,
+      "reason": "low_retrieval_confidence",
+      "top_score": 0.6659173180780571,
+      "rule_checks": [
+        {
+          "name": "refused_when_expected",
+          "passed": true,
+          "reason": "refused as expected"
+        }
+      ],
+      "rule_pass": true,
+      "judge": null,
+      "overall_pass": true
+    },
+    {
+      "id": "t008",
+      "problem_type": "vague_or_malformed_refusal",
+      "question": "What is the company's sabbatical leave policy after 5 years of continuous service?",
+      "refused": true,
+      "reason": "low_retrieval_confidence",
+      "top_score": 0.7074729016510145,
+      "rule_checks": [
+        {
+          "name": "refused_when_expected",
+          "passed": true,
+          "reason": "refused as expected"
+        }
+      ],
+      "rule_pass": true,
+      "judge": null,
+      "overall_pass": true
+    },
+    {
+      "id": "t039",
+      "problem_type": "vague_or_malformed_refusal",
+      "question": "hr policy question please help",
+      "refused": true,
+      "reason": "low_retrieval_confidence",
+      "top_score": 0.7021282826384723,
+      "rule_checks": [
+        {
+          "name": "refused_when_expected",
+          "passed": true,
+          "reason": "refused as expected"
+        }
+      ],
+      "rule_pass": true,
+      "judge": null,
+      "overall_pass": true
+    },
+    {
+      "id": "t040",
+      "problem_type": "vague_or_malformed_refusal",
+      "question": "what about the thing with the days",
+      "refused": true,
+      "reason": "low_retrieval_confidence",
+      "top_score": 0.6497695373700311,
+      "rule_checks": [
+        {
+          "name": "refused_when_expected",
+          "passed": true,
+          "reason": "refused as expected"
+        }
+      ],
+      "rule_pass": true,
+      "judge": null,
+      "overall_pass": true
+    },
+    {
+      "id": "t041",
+      "problem_type": "vague_or_malformed_refusal",
+      "question": "policy",
+      "refused": true,
+      "reason": "low_retrieval_confidence",
+      "top_score": 0.6550591159432443,
+      "rule_checks": [
+        {
+          "name": "refused_when_expected",
+          "passed": true,
+          "reason": "refused as expected"
+        }
+      ],
+      "rule_pass": true,
+      "judge": null,
+      "overall_pass": true
+    }
+  ],
+  "by_problem_type": {
+    "known_answer_baseline": {
+      "pass": 6,
+      "total": 8,
+      "rate": 0.75
+    },
+    "out_of_corpus_baseline": {
+      "pass": 3,
+      "total": 3,
+      "rate": 1.0
+    },
+    "false_refusal_near_threshold": {
+      "pass": 0,
+      "total": 1,
+      "rate": 0.0
+    },
+    "citation_drift": {
+      "pass": 3,
+      "total": 3,
+      "rate": 1.0
+    },
+    "region_mismatch_refusal": {
+      "pass": 2,
+      "total": 2,
+      "rate": 1.0
+    },
+    "vague_or_malformed_refusal": {
+      "pass": 4,
+      "total": 4,
+      "rate": 1.0
+    }
+  }
+}

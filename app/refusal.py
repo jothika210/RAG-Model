@@ -55,6 +55,7 @@ def answer_question(
     region: str | None = None,
     top_k: int = TOP_K,
     retrieval_mode: str = "semantic",
+    gate_mode: str = "top1",
 ) -> AnswerResult:
     """retrieval_mode: "semantic" (default, Week 3 behavior, unchanged) or
     "hybrid" (Week 4 -- BM25 + semantic, RRF-fused). Gate 1's similarity
@@ -64,6 +65,17 @@ def answer_question(
     checks the underlying semantic_rank/score signal on the top hit
     instead of comparing fused_score against SIMILARITY_THRESHOLD directly
     -- comparing incompatible scales would silently misfire the gate.
+
+    gate_mode: "top1" (default, Week 3-5 behavior, unchanged -- only the
+    top-ranked hit's score is checked against SIMILARITY_THRESHOLD) or
+    "top3" (Week 6's one approved change -- refuses only if NONE of the
+    top-3 retrieved hits clears the threshold). This is exactly Week 5's
+    dated, falsifiable prediction (see notes.md): a real answerable
+    question can have its correct chunk ranked 2nd or 3rd by cosine
+    similarity even though it's the one that actually answers the
+    question (see trace t016), so gating on rank-1 alone produces false
+    refusals. "top1" remains the default so nothing calling
+    answer_question() without this new argument is affected.
     """
     collection_name = COLLECTIONS[strategy]
     if retrieval_mode == "hybrid":
@@ -82,8 +94,15 @@ def answer_question(
         top_score = hits[0].score if hits else 0.0
 
     # Gate 1: pre-generation coverage check -- never call the LLM at all if
-    # retrieval confidence is too low.
-    if not hits or top_score < SIMILARITY_THRESHOLD:
+    # retrieval confidence is too low. Under "top3" gate_mode, check the
+    # best score among the first 3 hits rather than only the top-ranked
+    # one, since a correct answer can rank 2nd or 3rd on cosine similarity.
+    if gate_mode == "top3" and hits:
+        gate_score = max((h.score for h in hits[:3]), default=0.0)
+    else:
+        gate_score = top_score
+
+    if not hits or gate_score < SIMILARITY_THRESHOLD:
         return AnswerResult(
             refused=True,
             reason="low_retrieval_confidence",

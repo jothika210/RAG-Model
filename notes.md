@@ -90,7 +90,7 @@ No employee names or employee IDs are written to the trace file, in either direc
 
 **Prediction:** Checking the top-3 retrieved chunks (not just the top-1) against the 0.72 confidence threshold before refusing — i.e. refusing only if *none* of the top 3 clears the threshold, instead of gating on the top-1 score alone — will drop the false-refusal-near-threshold mode from **1/20 (5%)** to **0/20 (0%)** on this exact sample, without increasing the count of correctly-refused traces (currently **6/20 (30%)** combined across the out-of-corpus, region-mismatch, and vague-input modes), which should remain at **6/20 (30%)**.
 
-**Git commit:** `<pasted after commit — see below>`
+**Git commit:** `94f32ba3f5e57106d1ad0e2a067912dd66849286` (2026-09-05)
 
 ## Why a public benchmark would have missed these modes
 

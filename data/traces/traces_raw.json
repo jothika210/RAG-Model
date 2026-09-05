@@ -1,0 +1,2341 @@
+[
+  {
+    "trace_id": "t000",
+    "question": "What is the carry-over cap for a probationary employee under HR-207 section 4.2?",
+    "category": "known_answer",
+    "region": "APAC",
+    "strategy": "naive",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::naive::2",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.8365
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::naive::0",
+        "policy_id": "HR-207",
+        "section": "01",
+        "region": "APAC",
+        "score": 0.7943
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::naive::3",
+        "policy_id": "HR-201",
+        "section": "4.1",
+        "region": "APAC",
+        "score": 0.7647
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::naive::1",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.7635
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::naive::2",
+        "policy_id": "HR-201",
+        "section": "3.1",
+        "region": "APAC",
+        "score": 0.7276
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "The carry-over cap for a probationary employee under HR-207 section 4.2 is 2 days for the transition year only, regardless of sub-region [HR-207_carryover_apac.md::naive::2].",
+    "answer": "The carry-over cap for a probationary employee under HR-207 section 4.2 is 2 days for the transition year only, regardless of sub-region [HR-207_carryover_apac.md::naive::2].",
+    "citations": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::naive::2",
+        "policy_id": "HR-207",
+        "section": "4.2"
+      }
+    ],
+    "top_score": 0.8365133609579583
+  },
+  {
+    "trace_id": "t001",
+    "question": "Under HR-207, what is the carry-over cap for a full-time confirmed employee in India?",
+    "category": "known_answer",
+    "region": "APAC",
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::3",
+        "policy_id": "HR-207",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7899
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.7797
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::4",
+        "policy_id": "HR-207",
+        "section": "4",
+        "region": "APAC",
+        "score": 0.7465
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::6",
+        "policy_id": "HR-201",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.734
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::10",
+        "policy_id": "HR-201",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.7329
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "The carry-over cap for a full-time confirmed employee in India is 10 days [HR-207_carryover_apac.md::structure_aware::3].",
+    "answer": "The carry-over cap for a full-time confirmed employee in India is 10 days [HR-207_carryover_apac.md::structure_aware::3].",
+    "citations": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::3",
+        "policy_id": "HR-207",
+        "section": "3"
+      }
+    ],
+    "top_score": 0.7898978839162064
+  },
+  {
+    "trace_id": "t002",
+    "question": "How many days of company-paid sick leave is an EMEA employee entitled to per calendar year under HR-203?",
+    "category": "known_answer",
+    "region": "EMEA",
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::0",
+        "policy_id": "HR-209",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.7885
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::3",
+        "policy_id": "HR-203",
+        "section": "2.1",
+        "region": "EMEA",
+        "score": 0.7882
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::0",
+        "policy_id": "HR-203",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.7604
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::5",
+        "policy_id": "HR-203",
+        "section": "2.3",
+        "region": "EMEA",
+        "score": 0.7072
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::8",
+        "policy_id": "HR-203",
+        "section": "4.1",
+        "region": "EMEA",
+        "score": 0.7157
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "Employees in the EMEA region are entitled to 10 days of company-paid sick leave per calendar year at full salary [HR-203_sick_leave_emea.md::structure_aware::3].",
+    "answer": "Employees in the EMEA region are entitled to 10 days of company-paid sick leave per calendar year at full salary [HR-203_sick_leave_emea.md::structure_aware::3].",
+    "citations": [
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::3",
+        "policy_id": "HR-203",
+        "section": "2.1"
+      }
+    ],
+    "top_score": 0.7884693983396542
+  },
+  {
+    "trace_id": "t003",
+    "question": "Under HR-203, what certification is required for a sick absence of 4 to 7 days?",
+    "category": "known_answer",
+    "region": "EMEA",
+    "strategy": "naive",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::naive::0",
+        "policy_id": "HR-203",
+        "section": "01",
+        "region": "EMEA",
+        "score": 0.7252
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::naive::1",
+        "policy_id": "HR-203",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.7039
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::naive::2",
+        "policy_id": "HR-203",
+        "section": "4.1",
+        "region": "EMEA",
+        "score": 0.7012
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::naive::1",
+        "policy_id": "HR-209",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.6165
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::naive::0",
+        "policy_id": "HR-209",
+        "section": "15",
+        "region": "EMEA",
+        "score": 0.6055
+      }
+    ],
+    "refused": true,
+    "reason": "unverifiable_citation",
+    "raw_llm_output": "For a sick absence of 4 to 7 days, a doctor's note is required, and it must be submitted within 24 hours [HR-203_sick_leave_emea.md::naive::3].",
+    "answer": null,
+    "citations": [],
+    "top_score": 0.7252107047814969
+  },
+  {
+    "trace_id": "t004",
+    "question": "How many weeks of paid parental leave is a full-time secondary caregiver entitled to under HR-205?",
+    "category": "known_answer",
+    "region": "AMER",
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::4",
+        "policy_id": "HR-205",
+        "section": "2.2",
+        "region": "AMER",
+        "score": 0.8844
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::3",
+        "policy_id": "HR-205",
+        "section": "2.1",
+        "region": "AMER",
+        "score": 0.8407
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::5",
+        "policy_id": "HR-205",
+        "section": "3",
+        "region": "AMER",
+        "score": 0.7593
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::6",
+        "policy_id": "HR-205",
+        "section": "3.1",
+        "region": "AMER",
+        "score": 0.7782
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::6",
+        "policy_id": "HR-211",
+        "section": "4",
+        "region": "AMER",
+        "score": 0.7178
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "A full-time secondary caregiver is entitled to 6 weeks of paid parental leave at full salary [HR-205_parental_leave_amer.md::structure_aware::4].",
+    "answer": "A full-time secondary caregiver is entitled to 6 weeks of paid parental leave at full salary [HR-205_parental_leave_amer.md::structure_aware::4].",
+    "citations": [
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::4",
+        "policy_id": "HR-205",
+        "section": "2.2"
+      }
+    ],
+    "top_score": 0.8843848505041434
+  },
+  {
+    "trace_id": "t005",
+    "question": "Under HR-211, what is the carry-over cap for a full-time confirmed employee in Brazil, and why can't it be reduced?",
+    "category": "known_answer",
+    "region": "AMER",
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::3",
+        "policy_id": "HR-211",
+        "section": "2.1",
+        "region": "AMER",
+        "score": 0.8346
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::2",
+        "policy_id": "HR-211",
+        "section": "2",
+        "region": "AMER",
+        "score": 0.7753
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::5",
+        "policy_id": "HR-211",
+        "section": "4.2",
+        "region": "AMER",
+        "score": 0.7631
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::4",
+        "policy_id": "HR-211",
+        "section": "3",
+        "region": "AMER",
+        "score": 0.728
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::0",
+        "policy_id": "HR-211",
+        "section": "1",
+        "region": "AMER",
+        "score": 0.7196
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "The carry-over cap for a full-time confirmed employee in Brazil is 30 days, which reflects statutory annual leave (f\u00e9rias) requirements. It cannot be reduced by future addenda without legal review because it is not a company discretionary policy [HR-211_carryover_amer.md::structure_aware::3].",
+    "answer": "The carry-over cap for a full-time confirmed employee in Brazil is 30 days, which reflects statutory annual leave (f\u00e9rias) requirements. It cannot be reduced by future addenda without legal review because it is not a company discretionary policy [HR-211_carryover_amer.md::structure_aware::3].",
+    "citations": [
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::3",
+        "policy_id": "HR-211",
+        "section": "2.1"
+      }
+    ],
+    "top_score": 0.8346075245504319
+  },
+  {
+    "trace_id": "t006",
+    "question": "Under HR-209, if a remote employee's scheduled annual leave day coincides with a public holiday in their home country, what happens to that leave day?",
+    "category": "known_answer",
+    "region": "EMEA",
+    "strategy": "naive",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::naive::1",
+        "policy_id": "HR-209",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.8136
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::naive::0",
+        "policy_id": "HR-209",
+        "section": "15",
+        "region": "EMEA",
+        "score": 0.7936
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::naive::0",
+        "policy_id": "HR-203",
+        "section": "01",
+        "region": "EMEA",
+        "score": 0.6495
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::naive::1",
+        "policy_id": "HR-203",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.6084
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::naive::2",
+        "policy_id": "HR-203",
+        "section": "4.1",
+        "region": "EMEA",
+        "score": 0.6248
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "If a scheduled annual leave day coincides with a public holiday in the employee's registered home country, the day is credited back to the employee's leave balance and does not count against their annual entitlement [HR-209_remote_work_emea.md::naive::1].",
+    "answer": "If a scheduled annual leave day coincides with a public holiday in the employee's registered home country, the day is credited back to the employee's leave balance and does not count against their annual entitlement [HR-209_remote_work_emea.md::naive::1].",
+    "citations": [
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::naive::1",
+        "policy_id": "HR-209",
+        "section": "2.2"
+      }
+    ],
+    "top_score": 0.8135950267152385
+  },
+  {
+    "trace_id": "t007",
+    "question": "Under HR-201, what is the special carry-over exception for full-time confirmed employees based in Singapore, and how many days can they carry over?",
+    "category": "known_answer",
+    "region": "APAC",
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::10",
+        "policy_id": "HR-201",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.822
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::3",
+        "policy_id": "HR-207",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7959
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.7456
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::6",
+        "policy_id": "HR-201",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7146
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::2",
+        "policy_id": "HR-207",
+        "section": "2",
+        "region": "APAC",
+        "score": 0.6969
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "Full-time confirmed employees based in Singapore may carry over up to 7 days due to statutory minimum requirements under the Singapore Employment Act [HR-201_annual_leave_apac.md::structure_aware::10].",
+    "answer": "Full-time confirmed employees based in Singapore may carry over up to 7 days due to statutory minimum requirements under the Singapore Employment Act [HR-201_annual_leave_apac.md::structure_aware::10].",
+    "citations": [
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::10",
+        "policy_id": "HR-201",
+        "section": "4.2"
+      }
+    ],
+    "top_score": 0.8220429981333648
+  },
+  {
+    "trace_id": "t008",
+    "question": "What is the company's sabbatical leave policy after 5 years of continuous service?",
+    "category": "out_of_corpus",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::1",
+        "policy_id": "HR-211",
+        "section": "1.1",
+        "region": "AMER",
+        "score": 0.674
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::2",
+        "policy_id": "HR-201",
+        "section": "1.2",
+        "region": "APAC",
+        "score": 0.6949
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::1",
+        "policy_id": "HR-205",
+        "section": "1.1",
+        "region": "AMER",
+        "score": 0.7075
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::4",
+        "policy_id": "HR-201",
+        "section": "2.1",
+        "region": "APAC",
+        "score": 0.6956
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::1",
+        "policy_id": "HR-207",
+        "section": "1.1",
+        "region": "APAC",
+        "score": 0.6717
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.6739868410001597
+  },
+  {
+    "trace_id": "t009",
+    "question": "Can an employee take annual leave during their notice period after resignation?",
+    "category": "out_of_corpus",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::4",
+        "policy_id": "HR-209",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.7439
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::7",
+        "policy_id": "HR-201",
+        "section": "3.1",
+        "region": "APAC",
+        "score": 0.6956
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.6533
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::0",
+        "policy_id": "HR-201",
+        "section": "1",
+        "region": "APAC",
+        "score": 0.6891
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::2",
+        "policy_id": "HR-201",
+        "section": "1.2",
+        "region": "APAC",
+        "score": 0.6239
+      }
+    ],
+    "refused": true,
+    "reason": "model_declined",
+    "raw_llm_output": "REFUSE: insufficient grounding.",
+    "answer": null,
+    "citations": [],
+    "top_score": 0.7439069306251231
+  },
+  {
+    "trace_id": "t010",
+    "question": "What is the bereavement leave entitlement for APAC employees?",
+    "category": "out_of_corpus",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::0",
+        "policy_id": "HR-201",
+        "section": "1",
+        "region": "APAC",
+        "score": 0.7602
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::2",
+        "policy_id": "HR-207",
+        "section": "2",
+        "region": "APAC",
+        "score": 0.6983
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::0",
+        "policy_id": "HR-211",
+        "section": "1",
+        "region": "AMER",
+        "score": 0.7136
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::0",
+        "policy_id": "HR-205",
+        "section": "1",
+        "region": "AMER",
+        "score": 0.6883
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::1",
+        "policy_id": "HR-211",
+        "section": "1.1",
+        "region": "AMER",
+        "score": 0.6728
+      }
+    ],
+    "refused": true,
+    "reason": "model_declined",
+    "raw_llm_output": "REFUSE: insufficient grounding.",
+    "answer": null,
+    "citations": [],
+    "top_score": 0.7602242549725244
+  },
+  {
+    "trace_id": "t011",
+    "question": "What is the policy on unlimited PTO for senior management?",
+    "category": "out_of_corpus",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::5",
+        "policy_id": "HR-211",
+        "section": "4.2",
+        "region": "AMER",
+        "score": 0.6421
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::2",
+        "policy_id": "HR-207",
+        "section": "2",
+        "region": "APAC",
+        "score": 0.624
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.6134
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::3",
+        "policy_id": "HR-211",
+        "section": "2.1",
+        "region": "AMER",
+        "score": 0.5909
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::7",
+        "policy_id": "HR-201",
+        "section": "3.1",
+        "region": "APAC",
+        "score": 0.5916
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.6420656877427641
+  },
+  {
+    "trace_id": "t012",
+    "question": "Does the company offer a four-day work week option?",
+    "category": "out_of_corpus",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::8",
+        "policy_id": "HR-205",
+        "section": "3.3",
+        "region": "AMER",
+        "score": 0.6803
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::4",
+        "policy_id": "HR-209",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.5918
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::8",
+        "policy_id": "HR-203",
+        "section": "4.1",
+        "region": "EMEA",
+        "score": 0.6046
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::5",
+        "policy_id": "HR-209",
+        "section": "3",
+        "region": "EMEA",
+        "score": 0.6155
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::1",
+        "policy_id": "HR-201",
+        "section": "1.1",
+        "region": "APAC",
+        "score": 0.5943
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.6802923519053574
+  },
+  {
+    "trace_id": "t013",
+    "question": "If I'm on probation and get confirmed halfway through the year, how many carry-over days do I keep under HR-207?",
+    "category": "rephrase",
+    "region": "APAC",
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.8298
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::7",
+        "policy_id": "HR-201",
+        "section": "3.1",
+        "region": "APAC",
+        "score": 0.731
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::0",
+        "policy_id": "HR-207",
+        "section": "1",
+        "region": "APAC",
+        "score": 0.7069
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::3",
+        "policy_id": "HR-207",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7333
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::6",
+        "policy_id": "HR-201",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7453
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "If you are a probationary employee confirmed to permanent status partway through the leave year, you are subject to a carry-over cap of 2 days for that transition year only, regardless of sub-region [HR-207_carryover_apac.md::structure_aware::5].",
+    "answer": "If you are a probationary employee confirmed to permanent status partway through the leave year, you are subject to a carry-over cap of 2 days for that transition year only, regardless of sub-region [HR-207_carryover_apac.md::structure_aware::5].",
+    "citations": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2"
+      }
+    ],
+    "top_score": 0.8297721883605365
+  },
+  {
+    "trace_id": "t014",
+    "question": "I'm based in India and I'm full-time and confirmed -- what's my leave carry-over limit per HR-207?",
+    "category": "rephrase",
+    "region": "APAC",
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::3",
+        "policy_id": "HR-207",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7591
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::0",
+        "policy_id": "HR-207",
+        "section": "1",
+        "region": "APAC",
+        "score": 0.7034
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::10",
+        "policy_id": "HR-201",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.6981
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::6",
+        "policy_id": "HR-201",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7052
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::4",
+        "policy_id": "HR-201",
+        "section": "2.1",
+        "region": "APAC",
+        "score": 0.6754
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "Your leave carry-over limit as a full-time confirmed employee based in India is 10 days [HR-207_carryover_apac.md::structure_aware::3].",
+    "answer": "Your leave carry-over limit as a full-time confirmed employee based in India is 10 days [HR-207_carryover_apac.md::structure_aware::3].",
+    "citations": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::3",
+        "policy_id": "HR-207",
+        "section": "3"
+      }
+    ],
+    "top_score": 0.7591399666329379
+  },
+  {
+    "trace_id": "t015",
+    "question": "How much sick pay from the company do EMEA staff get each year, per HR-203?",
+    "category": "rephrase",
+    "region": "EMEA",
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::5",
+        "policy_id": "HR-203",
+        "section": "2.3",
+        "region": "EMEA",
+        "score": 0.7376
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::3",
+        "policy_id": "HR-203",
+        "section": "2.1",
+        "region": "EMEA",
+        "score": 0.7314
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::0",
+        "policy_id": "HR-209",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.7076
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::0",
+        "policy_id": "HR-203",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.7101
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::4",
+        "policy_id": "HR-203",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.6672
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "EMEA staff are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay they may separately be entitled to under local law [HR-203_sick_leave_emea.md::structure_aware::3].",
+    "answer": "EMEA staff are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay they may separately be entitled to under local law [HR-203_sick_leave_emea.md::structure_aware::3].",
+    "citations": [
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::3",
+        "policy_id": "HR-203",
+        "section": "2.1"
+      }
+    ],
+    "top_score": 0.737589983183392
+  },
+  {
+    "trace_id": "t016",
+    "question": "What paperwork do I need for a sick day that's 5 days long under HR-203?",
+    "category": "rephrase",
+    "region": "EMEA",
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::3",
+        "policy_id": "HR-203",
+        "section": "2.1",
+        "region": "EMEA",
+        "score": 0.716
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::6",
+        "policy_id": "HR-203",
+        "section": "3",
+        "region": "EMEA",
+        "score": 0.6818
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::0",
+        "policy_id": "HR-209",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.6574
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::4",
+        "policy_id": "HR-203",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.6875
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::5",
+        "policy_id": "HR-203",
+        "section": "2.3",
+        "region": "EMEA",
+        "score": 0.6615
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.7160241341538831
+  },
+  {
+    "trace_id": "t017",
+    "question": "As the non-primary parent, how much paid leave do I get for parental leave under HR-205?",
+    "category": "rephrase",
+    "region": "AMER",
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::6",
+        "policy_id": "HR-211",
+        "section": "4",
+        "region": "AMER",
+        "score": 0.7673
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::3",
+        "policy_id": "HR-205",
+        "section": "2.1",
+        "region": "AMER",
+        "score": 0.7415
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::4",
+        "policy_id": "HR-205",
+        "section": "2.2",
+        "region": "AMER",
+        "score": 0.7384
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::8",
+        "policy_id": "HR-205",
+        "section": "3.3",
+        "region": "AMER",
+        "score": 0.7121
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::6",
+        "policy_id": "HR-205",
+        "section": "3.1",
+        "region": "AMER",
+        "score": 0.685
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "As the non-primary parent, you are entitled to 6 weeks of paid parental leave at full salary under HR-205 [HR-205_parental_leave_amer.md::structure_aware::4].",
+    "answer": "As the non-primary parent, you are entitled to 6 weeks of paid parental leave at full salary under HR-205 [HR-205_parental_leave_amer.md::structure_aware::4].",
+    "citations": [
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::4",
+        "policy_id": "HR-205",
+        "section": "2.2"
+      }
+    ],
+    "top_score": 0.7673104146520096
+  },
+  {
+    "trace_id": "t018",
+    "question": "Brazil full-timers confirmed in their role -- what's their carry-over allowance under HR-211, and is there a legal reason it's fixed?",
+    "category": "rephrase",
+    "region": "AMER",
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::3",
+        "policy_id": "HR-211",
+        "section": "2.1",
+        "region": "AMER",
+        "score": 0.8132
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::2",
+        "policy_id": "HR-211",
+        "section": "2",
+        "region": "AMER",
+        "score": 0.781
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::5",
+        "policy_id": "HR-211",
+        "section": "4.2",
+        "region": "AMER",
+        "score": 0.7168
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::6",
+        "policy_id": "HR-211",
+        "section": "4",
+        "region": "AMER",
+        "score": 0.6267
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::0",
+        "policy_id": "HR-205",
+        "section": "1",
+        "region": "AMER",
+        "score": 0.6065
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "Brazil's full-time confirmed employees have a carry-over cap of 30 days, which reflects statutory annual leave (f\u00e9rias) requirements and is not a company discretionary policy; it cannot be reduced by future addenda without legal review [HR-211_carryover_amer.md::structure_aware::3].",
+    "answer": "Brazil's full-time confirmed employees have a carry-over cap of 30 days, which reflects statutory annual leave (f\u00e9rias) requirements and is not a company discretionary policy; it cannot be reduced by future addenda without legal review [HR-211_carryover_amer.md::structure_aware::3].",
+    "citations": [
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::3",
+        "policy_id": "HR-211",
+        "section": "2.1"
+      }
+    ],
+    "top_score": 0.8132197995312085
+  },
+  {
+    "trace_id": "t019",
+    "question": "If my scheduled leave lands on a public holiday back home while I'm working remotely, do I lose that day under HR-209?",
+    "category": "rephrase",
+    "region": "EMEA",
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::4",
+        "policy_id": "HR-209",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.8238
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::5",
+        "policy_id": "HR-209",
+        "section": "3",
+        "region": "EMEA",
+        "score": 0.7497
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::3",
+        "policy_id": "HR-209",
+        "section": "2.1",
+        "region": "EMEA",
+        "score": 0.7363
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::0",
+        "policy_id": "HR-209",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.7132
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::2",
+        "policy_id": "HR-209",
+        "section": "2",
+        "region": "EMEA",
+        "score": 0.6379
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "No, if your scheduled leave coincides with a public holiday in your registered home country, the day is credited back to your leave balance and does not count against your annual entitlement [HR-209_remote_work_emea.md::structure_aware::4].",
+    "answer": "No, if your scheduled leave coincides with a public holiday in your registered home country, the day is credited back to your leave balance and does not count against your annual entitlement [HR-209_remote_work_emea.md::structure_aware::4].",
+    "citations": [
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::4",
+        "policy_id": "HR-209",
+        "section": "2.2"
+      }
+    ],
+    "top_score": 0.8238177142553464
+  },
+  {
+    "trace_id": "t020",
+    "question": "Singapore employees who are confirmed full-time -- how many carry-over days do they specifically get under HR-201?",
+    "category": "rephrase",
+    "region": "APAC",
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::3",
+        "policy_id": "HR-207",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.8145
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::10",
+        "policy_id": "HR-201",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.8008
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::0",
+        "policy_id": "HR-207",
+        "section": "1",
+        "region": "APAC",
+        "score": 0.6834
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::6",
+        "policy_id": "HR-201",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7176
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.7459
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "Employees based in Singapore who are confirmed full-time may carry over up to 7 days due to statutory minimum requirements under the Singapore Employment Act, which is an exception to the standard 5-day cap outlined in HR-201 [HR-201_annual_leave_apac.md::structure_aware::10].",
+    "answer": "Employees based in Singapore who are confirmed full-time may carry over up to 7 days due to statutory minimum requirements under the Singapore Employment Act, which is an exception to the standard 5-day cap outlined in HR-201 [HR-201_annual_leave_apac.md::structure_aware::10].",
+    "citations": [
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::10",
+        "policy_id": "HR-201",
+        "section": "4.2"
+      }
+    ],
+    "top_score": 0.8145384954457311
+  },
+  {
+    "trace_id": "t021",
+    "question": "What's the leave policy?",
+    "category": "ambiguous",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::4",
+        "policy_id": "HR-209",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.6759
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::6",
+        "policy_id": "HR-205",
+        "section": "3.1",
+        "region": "AMER",
+        "score": 0.6764
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::9",
+        "policy_id": "HR-201",
+        "section": "4.1",
+        "region": "APAC",
+        "score": 0.6895
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::0",
+        "policy_id": "HR-205",
+        "section": "1",
+        "region": "AMER",
+        "score": 0.6734
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::9",
+        "policy_id": "HR-205",
+        "section": "4",
+        "region": "AMER",
+        "score": 0.6859
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.6758972736041908
+  },
+  {
+    "trace_id": "t022",
+    "question": "How much leave do I get and when does it reset?",
+    "category": "ambiguous",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::8",
+        "policy_id": "HR-203",
+        "section": "4.1",
+        "region": "EMEA",
+        "score": 0.6965
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::7",
+        "policy_id": "HR-201",
+        "section": "3.1",
+        "region": "APAC",
+        "score": 0.669
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::4",
+        "policy_id": "HR-209",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.6618
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::9",
+        "policy_id": "HR-201",
+        "section": "4.1",
+        "region": "APAC",
+        "score": 0.7014
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::5",
+        "policy_id": "HR-209",
+        "section": "3",
+        "region": "EMEA",
+        "score": 0.6678
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.6965042841582192
+  },
+  {
+    "trace_id": "t023",
+    "question": "What happens to my leave if I move from probation to confirmed AND relocate from Singapore to Japan mid-year?",
+    "category": "ambiguous",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::3",
+        "policy_id": "HR-207",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7173
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::0",
+        "policy_id": "HR-201",
+        "section": "1",
+        "region": "APAC",
+        "score": 0.7055
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::10",
+        "policy_id": "HR-201",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.7163
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::7",
+        "policy_id": "HR-201",
+        "section": "3.1",
+        "region": "APAC",
+        "score": 0.6673
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.7066
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.7173362295122667
+  },
+  {
+    "trace_id": "t024",
+    "question": "Tell me everything about HR-207.",
+    "category": "ambiguous",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::0",
+        "policy_id": "HR-207",
+        "section": "1",
+        "region": "APAC",
+        "score": 0.6592
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::6",
+        "policy_id": "HR-209",
+        "section": "4",
+        "region": "EMEA",
+        "score": 0.6464
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::0",
+        "policy_id": "HR-211",
+        "section": "1",
+        "region": "AMER",
+        "score": 0.6439
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::6",
+        "policy_id": "HR-207",
+        "section": "5",
+        "region": "APAC",
+        "score": 0.6391
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::6",
+        "policy_id": "HR-201",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.6517
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.6592091410845813
+  },
+  {
+    "trace_id": "t025",
+    "question": "What's the difference between HR-201 and HR-207 on carry-over?",
+    "category": "ambiguous",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::6",
+        "policy_id": "HR-209",
+        "section": "4",
+        "region": "EMEA",
+        "score": 0.7828
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::0",
+        "policy_id": "HR-207",
+        "section": "1",
+        "region": "APAC",
+        "score": 0.7713
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::6",
+        "policy_id": "HR-207",
+        "section": "5",
+        "region": "APAC",
+        "score": 0.7573
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::0",
+        "policy_id": "HR-211",
+        "section": "1",
+        "region": "AMER",
+        "score": 0.684
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.7145
+      }
+    ],
+    "refused": true,
+    "reason": "unverifiable_citation",
+    "raw_llm_output": "HR-207 clarifies annual leave carry-over caps for the APAC region where they differ from HR-201. In cases where HR-207 and HR-201 conflict on carry-over specifically, HR-207 governs as it is the more recent and specific addendum [HR-207_carryover_apac.md::structure_aware::1]. Additionally, while HR-201's Sections 1 through 2 and Section 4.1 remain in full effect, only the carry-over cap figures are superseded by HR-207 [HR-207_carryover_apac.md::structure_aware::6].",
+    "answer": null,
+    "citations": [],
+    "top_score": 0.782826431933419
+  },
+  {
+    "trace_id": "t026",
+    "question": "Can you compare sick leave and parental leave entitlements for EMEA vs AMER?",
+    "category": "ambiguous",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::0",
+        "policy_id": "HR-203",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.7866
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::0",
+        "policy_id": "HR-205",
+        "section": "1",
+        "region": "AMER",
+        "score": 0.7826
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::0",
+        "policy_id": "HR-209",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.7151
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::0",
+        "policy_id": "HR-211",
+        "section": "1",
+        "region": "AMER",
+        "score": 0.695
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::9",
+        "policy_id": "HR-205",
+        "section": "4",
+        "region": "AMER",
+        "score": 0.7115
+      }
+    ],
+    "refused": true,
+    "reason": "model_declined",
+    "raw_llm_output": "REFUSE: insufficient grounding.",
+    "answer": null,
+    "citations": [],
+    "top_score": 0.7866462981546494
+  },
+  {
+    "trace_id": "t027",
+    "question": "What is 'continuous service' and how does it affect all my leave entitlements?",
+    "category": "ambiguous",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "hybrid",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::1",
+        "policy_id": "HR-211",
+        "section": "1.1",
+        "region": "AMER",
+        "score": 0.8037
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::1",
+        "policy_id": "HR-207",
+        "section": "1.1",
+        "region": "APAC",
+        "score": 0.7863
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::1",
+        "policy_id": "HR-205",
+        "section": "1.1",
+        "region": "AMER",
+        "score": 0.7237
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::2",
+        "policy_id": "HR-201",
+        "section": "1.2",
+        "region": "APAC",
+        "score": 0.7698
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::7",
+        "policy_id": "HR-201",
+        "section": "3.1",
+        "region": "APAC",
+        "score": 0.6965
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "\"Continuous service\" means unbroken employment with the company from the employee's confirmed start date, excluding any period of unpaid leave exceeding 30 consecutive days. A break in continuous service resets accrual eligibility to zero [HR-201_annual_leave_apac.md::structure_aware::2]. \n\nFor leave entitlements, employees must complete at least 6 months of continuous service to be eligible for certain types of leave, such as parental leave [HR-205_parental_leave_amer.md::structure_aware::1]. Additionally, probationary employees accrue leave from day one but cannot take it until their probationary period ends and continuous service is confirmed in writing [HR-201_annual_leave_apac.md::structure_aware::7].",
+    "answer": "\"Continuous service\" means unbroken employment with the company from the employee's confirmed start date, excluding any period of unpaid leave exceeding 30 consecutive days. A break in continuous service resets accrual eligibility to zero [HR-201_annual_leave_apac.md::structure_aware::2]. \n\nFor leave entitlements, employees must complete at least 6 months of continuous service to be eligible for certain types of leave, such as parental leave [HR-205_parental_leave_amer.md::structure_aware::1]. Additionally, probationary employees accrue leave from day one but cannot take it until their probationary period ends and continuous service is confirmed in writing [HR-201_annual_leave_apac.md::structure_aware::7].",
+    "citations": [
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::2",
+        "policy_id": "HR-201",
+        "section": "1.2"
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::1",
+        "policy_id": "HR-205",
+        "section": "1.1"
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::7",
+        "policy_id": "HR-201",
+        "section": "3.1"
+      }
+    ],
+    "top_score": 0.8036596475731312
+  },
+  {
+    "trace_id": "t028",
+    "question": "wats the carryover cap 4 probationary employee hr207 4.2",
+    "category": "typo_informal",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::4",
+        "policy_id": "HR-207",
+        "section": "4",
+        "region": "APAC",
+        "score": 0.8871
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::4",
+        "policy_id": "HR-211",
+        "section": "3",
+        "region": "AMER",
+        "score": 0.8864
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.8381
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::5",
+        "policy_id": "HR-211",
+        "section": "4.2",
+        "region": "AMER",
+        "score": 0.7992
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::6",
+        "policy_id": "HR-209",
+        "section": "4",
+        "region": "EMEA",
+        "score": 0.7784
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "The carry-over cap for a probationary employee under HR-207 Section 4.2 is 2 days for the transition year only, regardless of sub-region. This cap applies only to leave accrued during the probationary period itself; leave accrued after confirmation follows the standard caps in Section 3 [HR-207_carryover_apac.md::structure_aware::5].",
+    "answer": "The carry-over cap for a probationary employee under HR-207 Section 4.2 is 2 days for the transition year only, regardless of sub-region. This cap applies only to leave accrued during the probationary period itself; leave accrued after confirmation follows the standard caps in Section 3 [HR-207_carryover_apac.md::structure_aware::5].",
+    "citations": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2"
+      }
+    ],
+    "top_score": 0.8870900171434284
+  },
+  {
+    "trace_id": "t029",
+    "question": "sick leave days emea plz under hr203",
+    "category": "typo_informal",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::0",
+        "policy_id": "HR-203",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.7873
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::0",
+        "policy_id": "HR-209",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.7781
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::3",
+        "policy_id": "HR-203",
+        "section": "2.1",
+        "region": "EMEA",
+        "score": 0.7585
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::8",
+        "policy_id": "HR-203",
+        "section": "4.1",
+        "region": "EMEA",
+        "score": 0.7176
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::4",
+        "policy_id": "HR-203",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.717
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "Employees in the EMEA region are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay they may separately be entitled to under local law [HR-203_sick_leave_emea.md::structure_aware::3]. Sick leave does not carry over between calendar years and has no cash-out value on termination, meaning unused sick days are forfeited on December 31st with no exceptions [HR-203_sick_leave_emea.md::structure_aware::8].",
+    "answer": "Employees in the EMEA region are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay they may separately be entitled to under local law [HR-203_sick_leave_emea.md::structure_aware::3]. Sick leave does not carry over between calendar years and has no cash-out value on termination, meaning unused sick days are forfeited on December 31st with no exceptions [HR-203_sick_leave_emea.md::structure_aware::8].",
+    "citations": [
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::3",
+        "policy_id": "HR-203",
+        "section": "2.1"
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::8",
+        "policy_id": "HR-203",
+        "section": "4.1"
+      }
+    ],
+    "top_score": 0.787295982049192
+  },
+  {
+    "trace_id": "t030",
+    "question": "secondary caregiver parental leave weeks HR205???",
+    "category": "typo_informal",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::4",
+        "policy_id": "HR-205",
+        "section": "2.2",
+        "region": "AMER",
+        "score": 0.8415
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::3",
+        "policy_id": "HR-205",
+        "section": "2.1",
+        "region": "AMER",
+        "score": 0.7991
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::5",
+        "policy_id": "HR-205",
+        "section": "3",
+        "region": "AMER",
+        "score": 0.7792
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::6",
+        "policy_id": "HR-205",
+        "section": "3.1",
+        "region": "AMER",
+        "score": 0.7721
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::8",
+        "policy_id": "HR-205",
+        "section": "3.3",
+        "region": "AMER",
+        "score": 0.753
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "Secondary caregivers are entitled to 6 weeks of paid parental leave at full salary [HR-205_parental_leave_amer.md::structure_aware::4].",
+    "answer": "Secondary caregivers are entitled to 6 weeks of paid parental leave at full salary [HR-205_parental_leave_amer.md::structure_aware::4].",
+    "citations": [
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::4",
+        "policy_id": "HR-205",
+        "section": "2.2"
+      }
+    ],
+    "top_score": 0.8415308324289343
+  },
+  {
+    "trace_id": "t031",
+    "question": "carryover cap brasil hr 211 full time",
+    "category": "typo_informal",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::3",
+        "policy_id": "HR-211",
+        "section": "2.1",
+        "region": "AMER",
+        "score": 0.7979
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::2",
+        "policy_id": "HR-211",
+        "section": "2",
+        "region": "AMER",
+        "score": 0.7702
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::5",
+        "policy_id": "HR-211",
+        "section": "4.2",
+        "region": "AMER",
+        "score": 0.7604
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.7462
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::6",
+        "policy_id": "HR-201",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7372
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "The carry-over cap for full-time confirmed employees in Brazil is 30 days, which reflects statutory annual leave requirements and is not a company discretionary policy [HR-211_carryover_amer.md::structure_aware::3].",
+    "answer": "The carry-over cap for full-time confirmed employees in Brazil is 30 days, which reflects statutory annual leave requirements and is not a company discretionary policy [HR-211_carryover_amer.md::structure_aware::3].",
+    "citations": [
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::3",
+        "policy_id": "HR-211",
+        "section": "2.1"
+      }
+    ],
+    "top_score": 0.7979096265329166
+  },
+  {
+    "trace_id": "t032",
+    "question": "hows the holiday overlap thing work for remote ppl hr209",
+    "category": "typo_informal",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::5",
+        "policy_id": "HR-209",
+        "section": "3",
+        "region": "EMEA",
+        "score": 0.7646
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::0",
+        "policy_id": "HR-209",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.7497
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::3",
+        "policy_id": "HR-209",
+        "section": "2.1",
+        "region": "EMEA",
+        "score": 0.7373
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::2",
+        "policy_id": "HR-209",
+        "section": "2",
+        "region": "EMEA",
+        "score": 0.7341
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::4",
+        "policy_id": "HR-209",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.7065
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "For fully remote and hybrid employees, if a scheduled annual leave day coincides with a public holiday in their registered home country, that day is credited back to their leave balance and does not count against their annual entitlement [HR-209_remote_work_emea.md::structure_aware::4]. Additionally, for both fully remote and hybrid arrangements, home country holidays apply and there is no deduction for leave balance on holiday overlap [HR-209_remote_work_emea.md::structure_aware::5].",
+    "answer": "For fully remote and hybrid employees, if a scheduled annual leave day coincides with a public holiday in their registered home country, that day is credited back to their leave balance and does not count against their annual entitlement [HR-209_remote_work_emea.md::structure_aware::4]. Additionally, for both fully remote and hybrid arrangements, home country holidays apply and there is no deduction for leave balance on holiday overlap [HR-209_remote_work_emea.md::structure_aware::5].",
+    "citations": [
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::4",
+        "policy_id": "HR-209",
+        "section": "2.2"
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::5",
+        "policy_id": "HR-209",
+        "section": "3"
+      }
+    ],
+    "top_score": 0.7646086765761245
+  },
+  {
+    "trace_id": "t033",
+    "question": "singapore carryover days pls hr201",
+    "category": "typo_informal",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::3",
+        "policy_id": "HR-207",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7875
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::10",
+        "policy_id": "HR-201",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.7486
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::2",
+        "policy_id": "HR-211",
+        "section": "2",
+        "region": "AMER",
+        "score": 0.7189
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::6",
+        "policy_id": "HR-201",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.6811
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::7",
+        "policy_id": "HR-203",
+        "section": "4",
+        "region": "EMEA",
+        "score": 0.6768
+      }
+    ],
+    "refused": false,
+    "reason": null,
+    "raw_llm_output": "Employees based in Singapore may carry over up to 7 days due to statutory minimum requirements under the Singapore Employment Act. This exception applies only to full-time confirmed employees; probationary and part-time employees remain subject to the caps in Section 3 [HR-201_annual_leave_apac.md::structure_aware::10].",
+    "answer": "Employees based in Singapore may carry over up to 7 days due to statutory minimum requirements under the Singapore Employment Act. This exception applies only to full-time confirmed employees; probationary and part-time employees remain subject to the caps in Section 3 [HR-201_annual_leave_apac.md::structure_aware::10].",
+    "citations": [
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::10",
+        "policy_id": "HR-201",
+        "section": "4.2"
+      }
+    ],
+    "top_score": 0.7874782695683318
+  },
+  {
+    "trace_id": "t034",
+    "question": "What is the carry-over cap for a full-time confirmed employee in India under HR-207?",
+    "category": "region_mismatch",
+    "region": "AMER",
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::5",
+        "policy_id": "HR-211",
+        "section": "4.2",
+        "region": "AMER",
+        "score": 0.7572
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::4",
+        "policy_id": "HR-211",
+        "section": "3",
+        "region": "AMER",
+        "score": 0.7559
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::2",
+        "policy_id": "HR-211",
+        "section": "2",
+        "region": "AMER",
+        "score": 0.7437
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::3",
+        "policy_id": "HR-211",
+        "section": "2.1",
+        "region": "AMER",
+        "score": 0.7222
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::0",
+        "policy_id": "HR-211",
+        "section": "1",
+        "region": "AMER",
+        "score": 0.717
+      }
+    ],
+    "refused": true,
+    "reason": "model_declined",
+    "raw_llm_output": "REFUSE: insufficient grounding.",
+    "answer": null,
+    "citations": [],
+    "top_score": 0.7571598775773061
+  },
+  {
+    "trace_id": "t035",
+    "question": "How many weeks of parental leave does a secondary caregiver get under HR-205?",
+    "category": "region_mismatch",
+    "region": "EMEA",
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::3",
+        "policy_id": "HR-203",
+        "section": "2.1",
+        "region": "EMEA",
+        "score": 0.6659
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::0",
+        "policy_id": "HR-209",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.6512
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::4",
+        "policy_id": "HR-203",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.6335
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::0",
+        "policy_id": "HR-203",
+        "section": "1",
+        "region": "EMEA",
+        "score": 0.6261
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::1",
+        "policy_id": "HR-203",
+        "section": "1.1",
+        "region": "EMEA",
+        "score": 0.6128
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.6659173180780571
+  },
+  {
+    "trace_id": "t036",
+    "question": "What is the sick leave entitlement under HR-203?",
+    "category": "region_mismatch",
+    "region": "APAC",
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::6",
+        "policy_id": "HR-201",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.7132
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::0",
+        "policy_id": "HR-201",
+        "section": "1",
+        "region": "APAC",
+        "score": 0.7033
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::2",
+        "policy_id": "HR-207",
+        "section": "2",
+        "region": "APAC",
+        "score": 0.6979
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::5",
+        "policy_id": "HR-207",
+        "section": "4.2",
+        "region": "APAC",
+        "score": 0.6743
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::0",
+        "policy_id": "HR-207",
+        "section": "1",
+        "region": "APAC",
+        "score": 0.6632
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.7131667255085368
+  },
+  {
+    "trace_id": "t037",
+    "question": "leave",
+    "category": "malformed",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::7",
+        "policy_id": "HR-203",
+        "section": "4",
+        "region": "EMEA",
+        "score": 0.6589
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::8",
+        "policy_id": "HR-201",
+        "section": "4",
+        "region": "APAC",
+        "score": 0.6589
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::2",
+        "policy_id": "HR-203",
+        "section": "2",
+        "region": "EMEA",
+        "score": 0.5984
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::2",
+        "policy_id": "HR-205",
+        "section": "2",
+        "region": "AMER",
+        "score": 0.5984
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::9",
+        "policy_id": "HR-201",
+        "section": "4.1",
+        "region": "APAC",
+        "score": 0.5821
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.6588763915415048
+  },
+  {
+    "trace_id": "t038",
+    "question": "?",
+    "category": "malformed",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::2",
+        "policy_id": "HR-205",
+        "section": "2",
+        "region": "AMER",
+        "score": 0.5986
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::2",
+        "policy_id": "HR-203",
+        "section": "2",
+        "region": "EMEA",
+        "score": 0.5986
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::8",
+        "policy_id": "HR-201",
+        "section": "4",
+        "region": "APAC",
+        "score": 0.5698
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::7",
+        "policy_id": "HR-203",
+        "section": "4",
+        "region": "EMEA",
+        "score": 0.5698
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::3",
+        "policy_id": "HR-201",
+        "section": "2",
+        "region": "APAC",
+        "score": 0.5425
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.5986006680134679
+  },
+  {
+    "trace_id": "t039",
+    "question": "hr policy question please help",
+    "category": "malformed",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::5",
+        "policy_id": "HR-205",
+        "section": "3",
+        "region": "AMER",
+        "score": 0.7021
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::8",
+        "policy_id": "HR-205",
+        "section": "3.3",
+        "region": "AMER",
+        "score": 0.6842
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::2",
+        "policy_id": "HR-205",
+        "section": "2",
+        "region": "AMER",
+        "score": 0.6775
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::2",
+        "policy_id": "HR-203",
+        "section": "2",
+        "region": "EMEA",
+        "score": 0.6775
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::4",
+        "policy_id": "HR-209",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.6726
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.7021282826384723
+  },
+  {
+    "trace_id": "t040",
+    "question": "what about the thing with the days",
+    "category": "malformed",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::2",
+        "policy_id": "HR-209",
+        "section": "2",
+        "region": "EMEA",
+        "score": 0.6498
+      },
+      {
+        "chunk_id": "HR-209_remote_work_emea.md::structure_aware::4",
+        "policy_id": "HR-209",
+        "section": "2.2",
+        "region": "EMEA",
+        "score": 0.5814
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::8",
+        "policy_id": "HR-203",
+        "section": "4.1",
+        "region": "EMEA",
+        "score": 0.5805
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::2",
+        "policy_id": "HR-205",
+        "section": "2",
+        "region": "AMER",
+        "score": 0.5784
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::2",
+        "policy_id": "HR-203",
+        "section": "2",
+        "region": "EMEA",
+        "score": 0.5784
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.6497695373700311
+  },
+  {
+    "trace_id": "t041",
+    "question": "policy",
+    "category": "malformed",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::2",
+        "policy_id": "HR-205",
+        "section": "2",
+        "region": "AMER",
+        "score": 0.6551
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::2",
+        "policy_id": "HR-203",
+        "section": "2",
+        "region": "EMEA",
+        "score": 0.6551
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::3",
+        "policy_id": "HR-201",
+        "section": "2",
+        "region": "APAC",
+        "score": 0.6196
+      },
+      {
+        "chunk_id": "HR-207_carryover_apac.md::structure_aware::4",
+        "policy_id": "HR-207",
+        "section": "4",
+        "region": "APAC",
+        "score": 0.5927
+      },
+      {
+        "chunk_id": "HR-211_carryover_amer.md::structure_aware::4",
+        "policy_id": "HR-211",
+        "section": "3",
+        "region": "AMER",
+        "score": 0.587
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.6550591159432443
+  },
+  {
+    "trace_id": "t042",
+    "question": "help me understand my benefits",
+    "category": "malformed",
+    "region": null,
+    "strategy": "structure_aware",
+    "retrieval_mode": "semantic",
+    "ranked_hits": [
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::2",
+        "policy_id": "HR-205",
+        "section": "2",
+        "region": "AMER",
+        "score": 0.6632
+      },
+      {
+        "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::2",
+        "policy_id": "HR-203",
+        "section": "2",
+        "region": "EMEA",
+        "score": 0.6632
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::5",
+        "policy_id": "HR-205",
+        "section": "3",
+        "region": "AMER",
+        "score": 0.624
+      },
+      {
+        "chunk_id": "HR-201_annual_leave_apac.md::structure_aware::6",
+        "policy_id": "HR-201",
+        "section": "3",
+        "region": "APAC",
+        "score": 0.6215
+      },
+      {
+        "chunk_id": "HR-205_parental_leave_amer.md::structure_aware::1",
+        "policy_id": "HR-205",
+        "section": "1.1",
+        "region": "AMER",
+        "score": 0.6174
+      }
+    ],
+    "refused": true,
+    "reason": "low_retrieval_confidence",
+    "raw_llm_output": null,
+    "answer": null,
+    "citations": [],
+    "top_score": 0.6631919378697235
+  }
+]

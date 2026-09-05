@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Evaluation Ledger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="mark">Dossier</div>
+        <div class="sub">HR Policy Addenda</div>
+      </div>
+      <nav>
+        <a href="/"><span class="dot"></span>Ask</a>
+        <a href="/eval.html" class="active"><span class="dot"></span>Evaluation</a>
+        <a href="/inspect.html"><span class="dot"></span>Inspect</a>
+      </nav>
+      <div class="footnote">6 regional addenda · structure-aware chunking ships</div>
+    </aside>
+
+    <main>
+      <div class="page-head">
+        <h1>Evaluation ledger</h1>
+        <p>Runs all 8 known-answer questions search-only against both chunking strategies, the region-filter demo, three cited answers, and three forced refusals — then writes <code>results.md</code> and <code>data/eval_raw_dump.json</code>.</p>
+      </div>
+
+      <div class="panel">
+        <p class="muted" style="margin: 0 0 1rem">Running calls the generation model for six questions and may take about a minute.</p>
+        <div class="controls" style="margin-top: 0">
+          <button id="run-btn">Run evaluation</button>
+          <button id="load-btn" class="secondary">Load last run</button>
+        </div>
+      </div>
+
+      <div id="output"></div>
+    </main>
+  </div>
+
+  <script src="/eval.js"></script>
+</body>
+</html>

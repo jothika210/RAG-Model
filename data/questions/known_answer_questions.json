@@ -1,0 +1,93 @@
+{
+  "answerable": [
+    {
+      "id": "q1",
+      "question": "What is the carry-over cap for a probationary employee under HR-207 section 4.2?",
+      "known_policy_id": "HR-207",
+      "known_section": "4.2",
+      "region": "APAC",
+      "depends_on_table": false,
+      "notes": "Answer is 2 days, stated in prose in Section 4.2, not the table itself, but the whole point is the number must stay attached to the '4.2' label."
+    },
+    {
+      "id": "q2",
+      "question": "Under HR-207, what is the carry-over cap for a full-time confirmed employee in India?",
+      "known_policy_id": "HR-207",
+      "known_section": "3",
+      "region": "APAC",
+      "depends_on_table": true,
+      "notes": "Answer is 10 days, a row in the Section 3 table (Employment Status=Full-time confirmed, Region=India)."
+    },
+    {
+      "id": "q3",
+      "question": "How many days of company-paid sick leave is an EMEA employee entitled to per calendar year under HR-203?",
+      "known_policy_id": "HR-203",
+      "known_section": "2.1",
+      "region": "EMEA",
+      "depends_on_table": false,
+      "notes": "Answer is 10 days, Section 2.1 prose."
+    },
+    {
+      "id": "q4",
+      "question": "Under HR-203, what certification is required for a sick absence of 4 to 7 days?",
+      "known_policy_id": "HR-203",
+      "known_section": "3",
+      "region": "EMEA",
+      "depends_on_table": true,
+      "notes": "Answer is a doctor's note, a row in the Section 3 certification table."
+    },
+    {
+      "id": "q5",
+      "question": "How many weeks of paid parental leave is a full-time secondary caregiver entitled to under HR-205?",
+      "known_policy_id": "HR-205",
+      "known_section": "3",
+      "region": "AMER",
+      "depends_on_table": true,
+      "notes": "Answer is 6 weeks, a row in the Section 3 eligibility table (Full-time, secondary caregiver)."
+    },
+    {
+      "id": "q6",
+      "question": "Under HR-211, what is the carry-over cap for a full-time confirmed employee in Brazil, and why can't it be reduced?",
+      "known_policy_id": "HR-211",
+      "known_section": "2",
+      "region": "AMER",
+      "depends_on_table": true,
+      "notes": "Answer is 30 days (statutory), row in Section 2 table plus the Section 2.1 note on why it can't be reduced."
+    },
+    {
+      "id": "q7",
+      "question": "Under HR-209, if a remote employee's scheduled annual leave day coincides with a public holiday in their home country, what happens to that leave day?",
+      "known_policy_id": "HR-209",
+      "known_section": "2.2",
+      "region": "EMEA",
+      "depends_on_table": false,
+      "notes": "Answer: credited back to leave balance, does not count against entitlement. Section 2.2 prose."
+    },
+    {
+      "id": "q8",
+      "question": "Under HR-201, what is the special carry-over exception for full-time confirmed employees based in Singapore, and how many days can they carry over?",
+      "known_policy_id": "HR-201",
+      "known_section": "4.2",
+      "region": "APAC",
+      "depends_on_table": false,
+      "notes": "Answer is 7 days (vs standard 5-day cap), Section 4.2 prose. Note this predates and is technically superseded in figure by HR-207 Section 3 (also 7 days for Singapore, so consistent) -- good test of whether retrieval grabs the right doc when two docs discuss the same region/topic."
+    }
+  ],
+  "out_of_corpus": [
+    {
+      "id": "ooc1",
+      "question": "What is the company's sabbatical leave policy after 5 years of continuous service?",
+      "reason": "No addendum defines a sabbatical policy anywhere in the corpus."
+    },
+    {
+      "id": "ooc2",
+      "question": "Can an employee take annual leave during their notice period after resignation?",
+      "reason": "None of the 6 addenda address notice-period leave usage or resignation interactions."
+    },
+    {
+      "id": "ooc3",
+      "question": "What is the bereavement leave entitlement for APAC employees?",
+      "reason": "Bereavement leave is not covered by any of the 6 addenda (only annual, sick, parental, carry-over, and remote-work interaction are covered)."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>HR Policy Dossier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="mark">Dossier</div>
+        <div class="sub">HR Policy Addenda</div>
+      </div>
+      <nav>
+        <a href="/" class="active"><span class="dot"></span>Ask</a>
+        <a href="/eval.html"><span class="dot"></span>Evaluation</a>
+        <a href="/inspect.html"><span class="dot"></span>Inspect</a>
+      </nav>
+      <div class="footnote">6 regional addenda · structure-aware chunking ships</div>
+    </aside>
+
+    <main>
+      <div class="page-head">
+        <h1>Ask the addenda</h1>
+        <p>Answers are grounded only in the six indexed policy documents, with a citation to the exact clause — or a refusal when the corpus doesn't support one.</p>
+      </div>
+
+      <div class="panel">
+        <div class="field">
+          <label for="question">Question</label>
+          <textarea id="question" placeholder="e.g. What is the carry-over cap for a probationary employee under HR-207 section 4.2?"></textarea>
+        </div>
+        <div class="controls">
+          <div class="field">
+            <label for="strategy">Chunking strategy</label>
+            <select id="strategy">
+              <option value="structure_aware" selected>Structure-aware</option>
+              <option value="naive">Naive</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="region">Region</label>
+            <select id="region">
+              <option value="">Any</option>
+              <option value="APAC">APAC</option>
+              <option value="EMEA">EMEA</option>
+              <option value="AMER">AMER</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="retrieval-mode">Retrieval</label>
+            <select id="retrieval-mode">
+              <option value="semantic" selected>Semantic</option>
+              <option value="hybrid">Hybrid (BM25 + semantic)</option>
+            </select>
+          </div>
+          <button id="ask-btn">Ask</button>
+        </div>
+      </div>
+
+      <div id="result"></div>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

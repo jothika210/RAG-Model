@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Retrieval Inspection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="mark">Dossier</div>
+        <div class="sub">HR Policy Addenda</div>
+      </div>
+      <nav>
+        <a href="/"><span class="dot"></span>Ask</a>
+        <a href="/eval.html"><span class="dot"></span>Evaluation</a>
+        <a href="/inspect.html" class="active"><span class="dot"></span>Inspect</a>
+      </nav>
+      <div class="footnote">6 regional addenda · structure-aware chunking ships</div>
+    </aside>
+
+    <main>
+      <div class="page-head">
+        <h1>Retrieval inspection</h1>
+        <p>For each known-answer question, what was fetched and the final answer, side by side. Toggle the mode to compare semantic-only retrieval against hybrid BM25 + semantic, RRF-fused.</p>
+      </div>
+
+      <div class="panel">
+        <div class="controls" style="margin-top: 0">
+          <div class="field">
+            <label for="collection">Collection</label>
+            <select id="collection">
+              <option value="structure_aware" selected>Structure-aware</option>
+              <option value="naive">Naive</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="mode">Mode</label>
+            <select id="mode">
+              <option value="semantic">Semantic (before)</option>
+              <option value="hybrid" selected>Hybrid (after)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="k">Top-k</label>
+            <select id="k">
+              <option value="3" selected>3</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <button id="load-btn">Load</button>
+        </div>
+      </div>
+
+      <div id="rows"></div>
+    </main>
+  </div>
+
+  <script src="/inspect.js"></script>
+</body>
+</html>

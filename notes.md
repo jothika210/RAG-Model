@@ -31,6 +31,10 @@ Trace IDs selected: `t000, t001, t002, t005, t006, t007, t008, t014, t015, t016,
 19. **t040** — The question was "what about the thing with the days"; the top-ranked fetch scored 0.6498, below the 0.72 threshold, and the app refused with reason `low_retrieval_confidence`.
 20. **t041** — The question was the single word "policy"; the top-ranked fetch scored 0.6551, below the 0.72 threshold, and the app refused with reason `low_retrieval_confidence`.
 
+## Grouping note: citation drift as its own mode
+
+Sentences 3, 9, and 11 above (t002, t015, t017) all record the same underlying pattern noticed only once the 20 sentences were compared side by side: the answer's citation resolved to a lower-ranked fetched chunk rather than the top-ranked one. In every one of these three cases the stated fact still matched the cited chunk's text, so none produced a wrong answer here — but this is the exact mechanism (citing a lower-ranked, merely-corroborating chunk instead of the top authoritative one) that produced a real citation-to-wrong-authority problem in a separate Week 4 measurement (question q5, HR-205 §3 vs §2.2). It is reported as its own named mode in `taxonomy.md` rather than folded silently into "grounded, correct" because the mechanism is distinct and worth tracking even though it has not yet caused visible harm in this sample.
+
 ## Replay evidence
 
 **Trace chosen at random, seeded:** seed `7` applied to `random.Random(7).choice(sampled_trace_ids)` → **`t017`** (command: `python scripts/replay_check.py --seed 7`).

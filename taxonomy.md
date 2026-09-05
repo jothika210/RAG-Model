@@ -7,6 +7,7 @@
 | False refusal near the confidence threshold | 1 | 5% | Annoyance — no wrong fact stated, employee just has to re-ask | t016 |
 | Correct refusal — region filter excludes the real document | 2 | 10% | Annoyance — refusal is correct behavior, not a defect | t034 |
 | Correct refusal — vague or malformed input | 4 | 20% | Annoyance — refusal is correct behavior, not a defect | t040 |
-| Grounded answer, citation resolves to a supporting chunk | 13 | 65% | None — not a failure mode | t001 |
+| Citation drift — cited chunk is not the top-ranked fetch | 3 | 15% | Annoyance today (the stated fact still matched the cited chunk in every case observed), but this is the mechanism that produced a real citation-to-wrong-authority error in Week 4 (q5), so it is worth tracking even though it did not cause a wrong answer in this sample | t017 |
+| Grounded answer, citation resolves to the top-ranked fetch | 10 | 50% | None — not a failure mode | t001 |
 
-No mode observed in this sample rises to legal-exposure severity (stating a wrong or superseded policy fact as if true) — every answered trace's citation resolved to a chunk that actually contains the stated figure.
+No mode observed in this sample rises to legal-exposure severity (stating a wrong or superseded policy fact as if true) — every answered trace's citation resolved to a chunk that actually contains the stated figure, including the three citation-drift cases.

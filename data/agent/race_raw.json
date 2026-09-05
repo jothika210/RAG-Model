@@ -1,0 +1,469 @@
+{
+  "agent_runs": [
+    {
+      "scenario_id": "s1",
+      "steps": [
+        {
+          "step_number": 1,
+          "thought": "I need to search for information regarding the carry-over cap for full-time confirmed employees in the APAC region, as well as the definition of 'continuous service' in the same context.",
+          "action": "search_policy",
+          "action_input": {
+            "query": "carry-over cap for full-time confirmed employees",
+            "region": "APAC"
+          },
+          "observation": "[HR-207_carryover_apac.md::structure_aware::3] policy=HR-207 section=3 score=0.804: ## 3. Revised Carry-Over Table  | Employment Status | Region | Carry-Over Cap | Effective | |---|---|---|---| | Full-time confirmed | Singapore | 7 days | 2026-02-01 | | Full-time \n[HR-201_annual_leave_apac.md::structure_aware::10] policy=HR-201 section=4.2 score=0.759: ### 4.2 Regional Exception \u2014 Singapore  Employees based in Singapore may carry over up to 7 days (not the standard 5-day cap) due to statutory minimum requirements under the Singap\n[HR-207_carryover_apac.md::structure_aware::5] policy=HR-207 section=4.2 score=0.802: ### 4.2 Probationary Carry-Over Cap  Notwithstanding Section 3, a probationary employee (as defined in HR-201 Section 1.2) who is confirmed to permanent status partway through the \n[HR-201_annual_leave_apac.md::structure_aware::6] policy=HR-201 section=3 score=0.745: ## 3. Eligibility Table  | Employment Status | Minimum Continuous Service | Annual Entitlement | Carry-Over Cap | |---|---|---|---| | Probationary | 0 months | 0 days (accrues, not\n[HR-207_carryover_apac.md::structure_aware::4] policy=HR-207 section=4 score=0.801: ## 4. Section 4.2 \u2014 Probationary Employee Carry-Over Cap",
+          "elapsed_seconds": 8.007697700002609,
+          "input_tokens": 435,
+          "output_tokens": 65,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 2,
+          "thought": "I found relevant information about the carry-over cap for full-time confirmed employees in Singapore, which is 7 days. Now, I need to search for the definition of 'continuous service' to provide a complete answer.",
+          "action": "search_policy",
+          "action_input": {
+            "query": "continuous service",
+            "region": "APAC"
+          },
+          "observation": "[HR-201_annual_leave_apac.md::structure_aware::2] policy=HR-201 section=1.2 score=0.679: ### 1.2 Definitions  \"Continuous service\" means unbroken employment with the company from the employee's confirmed start date, excluding any period of unpaid leave exceeding 30 con\n[HR-207_carryover_apac.md::structure_aware::1] policy=HR-207 section=1.1 score=0.684: ### 1.1 Definitions  \"Continuous service\" carries the same meaning defined in HR-201 Section 1.2: unbroken employment from the confirmed start date, excluding unpaid leave over 30 \n[HR-201_annual_leave_apac.md::structure_aware::4] policy=HR-201 section=2.1 score=0.592: ### 2.1 Standard Accrual Rate  Full-time employees accrue annual leave at a rate of 1.75 days per completed month of continuous service, capped at 21 days per calendar year.\n[HR-201_annual_leave_apac.md::structure_aware::6] policy=HR-201 section=3 score=0.610: ## 3. Eligibility Table  | Employment Status | Minimum Continuous Service | Annual Entitlement | Carry-Over Cap | |---|---|---|---| | Probationary | 0 months | 0 days (accrues, not\n[HR-201_annual_leave_apac.md::structure_aware::7] policy=HR-201 section=3.1 score=0.562: ### 3.1 Notes on the Table  Probationary employees accrue leave from day one but may not take it until their probationary period ends and continuous service is confirmed in writing",
+          "elapsed_seconds": 9.541151900000841,
+          "input_tokens": 882,
+          "output_tokens": 65,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 3,
+          "thought": "I found the definition of 'continuous service', which states it means unbroken employment with the company from the employee's confirmed start date, excluding any period of unpaid leave exceeding 30 consecutive days. Now I can summarize the findings.",
+          "action": "finish",
+          "action_input": {
+            "summary": "As a full-time confirmed employee based in Singapore, your carry-over cap for annual leave is 7 days. 'Continuous service' means unbroken employment with the company from your confirmed start date, excluding any period of unpaid leave exceeding 30 consecutive days.",
+            "citations": [
+              "HR-207_carryover_apac.md::3",
+              "HR-201_annual_leave_apac.md::1.2"
+            ]
+          },
+          "observation": "(finished)",
+          "elapsed_seconds": 11.828953100000945,
+          "input_tokens": 1330,
+          "output_tokens": 140,
+          "used_fallback_parse": false
+        }
+      ],
+      "final_answer": "As a full-time confirmed employee based in Singapore, your carry-over cap for annual leave is 7 days. 'Continuous service' means unbroken employment with the company from your confirmed start date, excluding any period of unpaid leave exceeding 30 consecutive days.",
+      "citations": [
+        "HR-207_carryover_apac.md::3",
+        "HR-201_annual_leave_apac.md::1.2"
+      ],
+      "stop_reason": "finished",
+      "total_seconds": 11.828956299999845,
+      "total_cost_usd": 0.00055905,
+      "reliability_ok": true
+    },
+    {
+      "scenario_id": "s2",
+      "steps": [
+        {
+          "step_number": 1,
+          "thought": "I need to search for information regarding sick leave entitlement and carry-over policies specifically for full-time confirmed employees in the EMEA region.",
+          "action": "search_policy",
+          "action_input": {
+            "query": "sick leave entitlement carry-over full-time confirmed employee",
+            "region": "EMEA"
+          },
+          "observation": "[HR-203_sick_leave_emea.md::structure_aware::3] policy=HR-203 section=2.1 score=0.817: ### 2.1 Standard Entitlement  Employees are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay they may separate\n[HR-203_sick_leave_emea.md::structure_aware::0] policy=HR-203 section=1 score=0.752: ## 1. Purpose  This addendum supplements the base Employee Leave Handbook for employees working in the EMEA region (UK, Germany, France, UAE). It sets out sick leave entitlement, c\n[HR-203_sick_leave_emea.md::structure_aware::8] policy=HR-203 section=4.1 score=0.792: ### 4.1 No Carry-Over  Sick leave does not carry over between calendar years and has no cash-out value on termination. Unused sick days are forfeited on December 31st with no excep\n[HR-203_sick_leave_emea.md::structure_aware::4] policy=HR-203 section=2.2 score=0.738: ### 2.2 Extended Illness  For illness extending beyond 10 days, employees move to statutory sick pay (or local equivalent) as administered by local payroll, topped up per Section 2\n[HR-209_remote_work_emea.md::structure_aware::4] policy=HR-209 section=2.2 score=0.708: ### 2.2 Leave Deduction Rule  If a scheduled annual leave day coincides with a public holiday in the employee's registered home country, the day is credited back to the employee's ",
+          "elapsed_seconds": 2.134423899999092,
+          "input_tokens": 435,
+          "output_tokens": 57,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 2,
+          "thought": "I have found relevant information regarding sick leave entitlement and the carry-over policy for employees in the EMEA region. I will now extract the full text for the sick leave entitlement and the carry-over policy to provide a precise answer.",
+          "action": "get_chunk",
+          "action_input": {
+            "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::3"
+          },
+          "observation": "[HR-203_sick_leave_emea.md::structure_aware::3] policy=HR-203 section=2.1: ### 2.1 Standard Entitlement\n\nEmployees are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay they may separately be entitled to under local law.",
+          "elapsed_seconds": 4.393914100000984,
+          "input_tokens": 874,
+          "output_tokens": 78,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 3,
+          "thought": "I have the full text for the sick leave entitlement. Now, I will retrieve the full text for the carry-over policy to complete the answer.",
+          "action": "get_chunk",
+          "action_input": {
+            "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::8"
+          },
+          "observation": "[HR-203_sick_leave_emea.md::structure_aware::8] policy=HR-203 section=4.1: ### 4.1 No Carry-Over\n\nSick leave does not carry over between calendar years and has no cash-out value on termination. Unused sick days are forfeited on December 31st with no exceptions.",
+          "elapsed_seconds": 5.759239600000001,
+          "input_tokens": 1035,
+          "output_tokens": 61,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 4,
+          "thought": "I now have all the necessary information regarding sick leave entitlement and the carry-over policy for full-time confirmed employees in the EMEA region. I will summarize this information and prepare to finish.",
+          "action": "finish",
+          "action_input": {
+            "summary": "As a full-time confirmed employee in the EMEA region, you are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay you may be entitled to under local law. However, sick leave does not carry over between calendar years, and any unused sick days are forfeited on December 31st with no exceptions.",
+            "citations": [
+              "HR-203_sick_leave_emea.md::structure_aware::3",
+              "HR-203_sick_leave_emea.md::structure_aware::8"
+            ]
+          },
+          "observation": "(finished)",
+          "elapsed_seconds": 8.080831999999646,
+          "input_tokens": 1180,
+          "output_tokens": 176,
+          "used_fallback_parse": false
+        }
+      ],
+      "final_answer": "As a full-time confirmed employee in the EMEA region, you are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay you may be entitled to under local law. However, sick leave does not carry over between calendar years, and any unused sick days are forfeited on December 31st with no exceptions.",
+      "citations": [
+        "HR-203_sick_leave_emea.md::structure_aware::3",
+        "HR-203_sick_leave_emea.md::structure_aware::8"
+      ],
+      "stop_reason": "finished",
+      "total_seconds": 8.080837699999392,
+      "total_cost_usd": 0.0007518,
+      "reliability_ok": true
+    },
+    {
+      "scenario_id": "s3",
+      "steps": [
+        {
+          "step_number": 1,
+          "thought": "I need to search for information regarding parental leave entitlements for secondary caregivers and any carry-over caps specific to the AMER region, particularly for Brazil.",
+          "action": "search_policy",
+          "action_input": {
+            "query": "parental leave secondary caregiver",
+            "region": "AMER"
+          },
+          "observation": "[HR-205_parental_leave_amer.md::structure_aware::4] policy=HR-205 section=2.2 score=0.882: ### 2.2 Secondary Caregiver  Secondary caregivers are entitled to 6 weeks of paid parental leave at full salary.\n[HR-205_parental_leave_amer.md::structure_aware::3] policy=HR-205 section=2.1 score=0.815: ### 2.1 Primary Caregiver  Primary caregivers are entitled to 16 weeks of paid parental leave at full salary, inclusive of any applicable statutory leave (e.g. FMLA in the United S\n[HR-205_parental_leave_amer.md::structure_aware::5] policy=HR-205 section=3 score=0.717: ## 3. Eligibility Table  | Employee Category | Minimum Service | Leave Type | Weeks Paid | |---|---|---|---| | Full-time, primary caregiver | 6 months | Birth/Adoption/Foster | 16 \n[HR-205_parental_leave_amer.md::structure_aware::6] policy=HR-205 section=3.1 score=0.797: ### 3.1 Notes  \"Primary caregiver\" is the parent who will be the child's main provider of care during the leave period, regardless of gender. Employees must designate primary or se\n[HR-205_parental_leave_amer.md::structure_aware::9] policy=HR-205 section=4 score=0.690: ## 4. Carry-Over  Parental leave is a per-event entitlement, not an annual accrual, and therefore has no carry-over provision.",
+          "elapsed_seconds": 2.8334842000003846,
+          "input_tokens": 433,
+          "output_tokens": 56,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 2,
+          "thought": "I found the information regarding parental leave for secondary caregivers, which is 6 weeks of paid leave at full salary. Additionally, I found that there is no carry-over provision for parental leave as it is a per-event entitlement. I will now compile this information for the final response.",
+          "action": "finish",
+          "action_input": {
+            "summary": "As a full-time confirmed employee in AMER (Brazil), you are entitled to 6 weeks of paid parental leave at full salary as a secondary caregiver. Additionally, there is no carry-over cap for parental leave, as it is a per-event entitlement and does not accrue annually.",
+            "citations": [
+              "4",
+              "3"
+            ]
+          },
+          "observation": "(finished)",
+          "elapsed_seconds": 5.4662290999986,
+          "input_tokens": 847,
+          "output_tokens": 134,
+          "used_fallback_parse": false
+        }
+      ],
+      "final_answer": "As a full-time confirmed employee in AMER (Brazil), you are entitled to 6 weeks of paid parental leave at full salary as a secondary caregiver. Additionally, there is no carry-over cap for parental leave, as it is a per-event entitlement and does not accrue annually.",
+      "citations": [
+        "4",
+        "3"
+      ],
+      "stop_reason": "finished",
+      "total_seconds": 5.466232200000377,
+      "total_cost_usd": 0.00030599999999999996,
+      "reliability_ok": true
+    },
+    {
+      "scenario_id": "s4",
+      "steps": [
+        {
+          "step_number": 1,
+          "thought": "I need to search for information regarding the carry-over cap for probationary employees in the APAC region, specifically for India, and what changes once they are confirmed.",
+          "action": "search_policy",
+          "action_input": {
+            "query": "carry-over cap probationary employee",
+            "region": "APAC"
+          },
+          "observation": "[HR-207_carryover_apac.md::structure_aware::4] policy=HR-207 section=4 score=0.898: ## 4. Section 4.2 \u2014 Probationary Employee Carry-Over Cap\n[HR-207_carryover_apac.md::structure_aware::5] policy=HR-207 section=4.2 score=0.857: ### 4.2 Probationary Carry-Over Cap  Notwithstanding Section 3, a probationary employee (as defined in HR-201 Section 1.2) who is confirmed to permanent status partway through the \n[HR-201_annual_leave_apac.md::structure_aware::7] policy=HR-201 section=3.1 score=0.765: ### 3.1 Notes on the Table  Probationary employees accrue leave from day one but may not take it until their probationary period ends and continuous service is confirmed in writing\n[HR-207_carryover_apac.md::structure_aware::2] policy=HR-207 section=2 score=0.809: ## 2. Background  Following a review of regional statutory minimums, People Ops is standardizing carry-over caps across APAC sub-regions for the 2026 leave year, with one specific \n[HR-201_annual_leave_apac.md::structure_aware::6] policy=HR-201 section=3 score=0.741: ## 3. Eligibility Table  | Employment Status | Minimum Continuous Service | Annual Entitlement | Carry-Over Cap | |---|---|---|---| | Probationary | 0 months | 0 days (accrues, not",
+          "elapsed_seconds": 1.753759600000194,
+          "input_tokens": 431,
+          "output_tokens": 59,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 2,
+          "thought": "I found relevant chunks regarding the carry-over cap for probationary employees. I will retrieve the full text of the chunk that specifically discusses the probationary carry-over cap to provide accurate information.",
+          "action": "get_chunk",
+          "action_input": {
+            "chunk_id": "HR-207_carryover_apac.md::structure_aware::4"
+          },
+          "observation": "[HR-207_carryover_apac.md::structure_aware::4] policy=HR-207 section=4: ## 4. Section 4.2 \u2014 Probationary Employee Carry-Over Cap",
+          "elapsed_seconds": 3.409373999998934,
+          "input_tokens": 855,
+          "output_tokens": 68,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 3,
+          "thought": "I need to retrieve the full text of the specific section that discusses the probationary carry-over cap to provide a complete answer.",
+          "action": "get_chunk",
+          "action_input": {
+            "chunk_id": "HR-207_carryover_apac.md::structure_aware::5"
+          },
+          "observation": "[HR-207_carryover_apac.md::structure_aware::5] policy=HR-207 section=4.2: ### 4.2 Probationary Carry-Over Cap\n\nNotwithstanding Section 3, a probationary employee (as defined in HR-201 Section 1.2) who is confirmed to permanent status partway through the leave year is subject to a carry-over cap of 2 days for that transition year only, regardless of sub-region. This 2-day cap applies only to leave accrued during the probationary period itself; leave accrued after confirmation follows the standard caps in Section 3. From the following leave year onward, the employee is subject to the standard regional cap in Section 3.",
+          "elapsed_seconds": 4.811409500001901,
+          "input_tokens": 977,
+          "output_tokens": 56,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 4,
+          "thought": "I now have the necessary information regarding the carry-over cap for probationary employees and what happens once they are confirmed. I will summarize this information and prepare to finish.",
+          "action": "finish",
+          "action_input": {
+            "summary": "As a probationary employee in APAC (India), your carry-over cap during the probationary period is 2 days for the transition year only, applicable to leave accrued during the probationary period. Once you are confirmed to permanent status, any leave accrued thereafter will follow the standard regional carry-over caps outlined in Section 3 of the policy.",
+            "citations": [
+              "HR-207_carryover_apac.md::structure_aware::5"
+            ]
+          },
+          "observation": "(finished)",
+          "elapsed_seconds": 7.270884300000034,
+          "input_tokens": 1192,
+          "output_tokens": 142,
+          "used_fallback_parse": false
+        }
+      ],
+      "final_answer": "As a probationary employee in APAC (India), your carry-over cap during the probationary period is 2 days for the transition year only, applicable to leave accrued during the probationary period. Once you are confirmed to permanent status, any leave accrued thereafter will follow the standard regional carry-over caps outlined in Section 3 of the policy.",
+      "citations": [
+        "HR-207_carryover_apac.md::structure_aware::5"
+      ],
+      "stop_reason": "finished",
+      "total_seconds": 7.270888600000035,
+      "total_cost_usd": 0.0007132499999999999,
+      "reliability_ok": true
+    },
+    {
+      "scenario_id": "s5",
+      "steps": [
+        {
+          "step_number": 1,
+          "thought": "I need to find the sick leave certification requirements for a 5-day absence and the carry-over rules for sick leave specifically for the EMEA region. I will start by searching for sick leave policies in the EMEA region.",
+          "action": "search_policy",
+          "action_input": {
+            "query": "sick leave certification requirement 5-day absence",
+            "region": "EMEA"
+          },
+          "observation": "[HR-203_sick_leave_emea.md::structure_aware::6] policy=HR-203 section=3 score=0.805: ## 3. Certification Table  | Absence Duration | Certification Required | Notice to Manager | |---|---|---| | 1 day | Self-certification | Same day | | 2\u20133 days | Self-certification\n[HR-203_sick_leave_emea.md::structure_aware::3] policy=HR-203 section=2.1 score=0.768: ### 2.1 Standard Entitlement  Employees are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay they may separate\n[HR-203_sick_leave_emea.md::structure_aware::0] policy=HR-203 section=1 score=0.720: ## 1. Purpose  This addendum supplements the base Employee Leave Handbook for employees working in the EMEA region (UK, Germany, France, UAE). It sets out sick leave entitlement, c\n[HR-203_sick_leave_emea.md::structure_aware::8] policy=HR-203 section=4.1 score=0.762: ### 4.1 No Carry-Over  Sick leave does not carry over between calendar years and has no cash-out value on termination. Unused sick days are forfeited on December 31st with no excep\n[HR-209_remote_work_emea.md::structure_aware::4] policy=HR-209 section=2.2 score=0.637: ### 2.2 Leave Deduction Rule  If a scheduled annual leave day coincides with a public holiday in the employee's registered home country, the day is credited back to the employee's ",
+          "elapsed_seconds": 2.23387410000214,
+          "input_tokens": 438,
+          "output_tokens": 75,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 2,
+          "thought": "I found relevant information regarding the sick leave certification requirements and the carry-over rule for sick leave in the EMEA region. I will now retrieve the full text for the certification requirement and the carry-over rule to provide accurate details.",
+          "action": "get_chunk",
+          "action_input": {
+            "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::6"
+          },
+          "observation": "[HR-203_sick_leave_emea.md::structure_aware::6] policy=HR-203 section=3: ## 3. Certification Table\n\n| Absence Duration | Certification Required | Notice to Manager |\n|---|---|---|\n| 1 day | Self-certification | Same day |\n| 2\u20133 days | Self-certification | Same day |\n| 4\u20137 days | Doctor's note | Within 24 hours |\n| 8+ days | Doctor's note + People Ops review | Within 24 hours |",
+          "elapsed_seconds": 4.047843600001215,
+          "input_tokens": 901,
+          "output_tokens": 77,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 3,
+          "thought": "I have the full text for the sick leave certification requirements. Now, I will retrieve the full text for the carry-over rule to complete the information needed.",
+          "action": "get_chunk",
+          "action_input": {
+            "chunk_id": "HR-203_sick_leave_emea.md::structure_aware::8"
+          },
+          "observation": "[HR-203_sick_leave_emea.md::structure_aware::8] policy=HR-203 section=4.1: ### 4.1 No Carry-Over\n\nSick leave does not carry over between calendar years and has no cash-out value on termination. Unused sick days are forfeited on December 31st with no exceptions.",
+          "elapsed_seconds": 5.603035399999499,
+          "input_tokens": 1102,
+          "output_tokens": 63,
+          "used_fallback_parse": false
+        },
+        {
+          "step_number": 4,
+          "thought": "I now have all the necessary information regarding the sick leave certification requirements and the carry-over rule. I will summarize the findings and prepare to finish.",
+          "action": "finish",
+          "action_input": {
+            "summary": "As a full-time confirmed employee in the EMEA region, for a 5-day absence due to sickness, you are required to provide a doctor's note within 24 hours. Additionally, sick leave does not carry over between calendar years, and any unused sick days are forfeited on December 31st with no exceptions.",
+            "citations": [
+              "HR-203_sick_leave_emea.md::structure_aware::6",
+              "HR-203_sick_leave_emea.md::structure_aware::8"
+            ]
+          },
+          "observation": "(finished)",
+          "elapsed_seconds": 8.670185400002083,
+          "input_tokens": 1249,
+          "output_tokens": 157,
+          "used_fallback_parse": false
+        }
+      ],
+      "final_answer": "As a full-time confirmed employee in the EMEA region, for a 5-day absence due to sickness, you are required to provide a doctor's note within 24 hours. Additionally, sick leave does not carry over between calendar years, and any unused sick days are forfeited on December 31st with no exceptions.",
+      "citations": [
+        "HR-203_sick_leave_emea.md::structure_aware::6",
+        "HR-203_sick_leave_emea.md::structure_aware::8"
+      ],
+      "stop_reason": "finished",
+      "total_seconds": 8.670187899999291,
+      "total_cost_usd": 0.0007767,
+      "reliability_ok": true
+    }
+  ],
+  "workflow_runs": [
+    {
+      "scenario_id": "s1",
+      "steps": [
+        {
+          "step_number": 1,
+          "action": "search_policy",
+          "action_input": {
+            "query": "carry-over cap",
+            "region": "APAC"
+          },
+          "observation": "[HR-207_carryover_apac.md::structure_aware::4] policy=HR-207 section=4 score=0.793: ## 4. Section 4.2 \u2014 Probationary Employee Carry-Over Cap\n[HR-207_carryover_apac.md::structure_aware::5] policy=HR-207 section=4.2 score=0.746: ### 4.2 Probationary Carry-Over Cap  Notwithstanding Section 3, a probationary employee (as defined in HR-201 Section 1.2) who is confirmed to permanent status partway through the \n[HR-201_annual_leave_apac.md::structure_aware::9] policy=HR-201 section=4.1 score=0.745: ### 4.1 General Rule  Unused annual leave up to the carry-over cap specified in Section 3 may be carried into the following leave year. Any balance above the cap is forfeited on De\n[HR-201_annual_leave_apac.md::structure_aware::8] policy=HR-201 section=4 score=0.803: ## 4. Carry-Over\n[HR-207_carryover_apac.md::structure_aware::3] policy=HR-207 section=3 score=0.714: ## 3. Revised Carry-Over Table  | Employment Status | Region | Carry-Over Cap | Effective | |---|---|---|---| | Full-time confirmed | Singapore | 7 days | 2026-02-01 | | Full-time "
+        }
+      ],
+      "final_answer": "As a full-time confirmed employee based in Singapore, your carry-over cap is 7 days, effective from February 1, 2026 [HR-207_carryover_apac.md::structure_aware::3].\n\nThe search results do not provide a definition for 'continuous service.' Therefore, I cannot provide that detail.",
+      "citations": [
+        "HR-207_carryover_apac.md::structure_aware::3"
+      ],
+      "stop_reason": "finished",
+      "total_seconds": 3.6331829999980982,
+      "total_cost_usd": 0.00010229999999999999,
+      "reliability_ok": true
+    },
+    {
+      "scenario_id": "s2",
+      "steps": [
+        {
+          "step_number": 1,
+          "action": "search_policy",
+          "action_input": {
+            "query": "carry-over cap",
+            "region": "EMEA"
+          },
+          "observation": "[HR-203_sick_leave_emea.md::structure_aware::7] policy=HR-203 section=4 score=0.803: ## 4. Carry-Over\n[HR-209_remote_work_emea.md::structure_aware::6] policy=HR-209 section=4 score=0.759: ## 4. Carry-Over  This addendum does not modify carry-over caps; employees remain subject to HR-201 Section 4 and, where applicable, HR-207 for APAC-based remote arrangements.\n[HR-203_sick_leave_emea.md::structure_aware::8] policy=HR-203 section=4.1 score=0.654: ### 4.1 No Carry-Over  Sick leave does not carry over between calendar years and has no cash-out value on termination. Unused sick days are forfeited on December 31st with no excep\n[HR-203_sick_leave_emea.md::structure_aware::2] policy=HR-203 section=2 score=0.615: ## 2. Entitlement\n[HR-203_sick_leave_emea.md::structure_aware::0] policy=HR-203 section=1 score=0.576: ## 1. Purpose  This addendum supplements the base Employee Leave Handbook for employees working in the EMEA region (UK, Germany, France, UAE). It sets out sick leave entitlement, c"
+        },
+        {
+          "step_number": 2,
+          "action": "search_policy",
+          "action_input": {
+            "query": "sick leave entitlement and certification",
+            "region": "EMEA"
+          },
+          "observation": "[HR-203_sick_leave_emea.md::structure_aware::0] policy=HR-203 section=1 score=0.791: ## 1. Purpose  This addendum supplements the base Employee Leave Handbook for employees working in the EMEA region (UK, Germany, France, UAE). It sets out sick leave entitlement, c\n[HR-203_sick_leave_emea.md::structure_aware::3] policy=HR-203 section=2.1 score=0.831: ### 2.1 Standard Entitlement  Employees are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay they may separate\n[HR-203_sick_leave_emea.md::structure_aware::8] policy=HR-203 section=4.1 score=0.732: ### 4.1 No Carry-Over  Sick leave does not carry over between calendar years and has no cash-out value on termination. Unused sick days are forfeited on December 31st with no excep\n[HR-203_sick_leave_emea.md::structure_aware::6] policy=HR-203 section=3 score=0.668: ## 3. Certification Table  | Absence Duration | Certification Required | Notice to Manager | |---|---|---| | 1 day | Self-certification | Same day | | 2\u20133 days | Self-certification\n[HR-203_sick_leave_emea.md::structure_aware::4] policy=HR-203 section=2.2 score=0.730: ### 2.2 Extended Illness  For illness extending beyond 10 days, employees move to statutory sick pay (or local equivalent) as administered by local payroll, topped up per Section 2"
+        },
+        {
+          "step_number": 3,
+          "action": "search_policy",
+          "action_input": {
+            "query": "remote work public holiday leave deduction",
+            "region": "EMEA"
+          },
+          "observation": "[HR-209_remote_work_emea.md::structure_aware::5] policy=HR-209 section=3 score=0.804: ## 3. Equipment and Leave-Adjacent Table  | Arrangement Type | Home Country Holidays Apply | Leave Balance Deduction on Holiday Overlap | |---|---|---| | Fully remote | Yes | Credi\n[HR-209_remote_work_emea.md::structure_aware::4] policy=HR-209 section=2.2 score=0.802: ### 2.2 Leave Deduction Rule  If a scheduled annual leave day coincides with a public holiday in the employee's registered home country, the day is credited back to the employee's \n[HR-209_remote_work_emea.md::structure_aware::0] policy=HR-209 section=1 score=0.738: ## 1. Purpose  This addendum clarifies how annual and sick leave under HR-201 and HR-203 apply to employees approved for fully remote or hybrid work arrangements within EMEA, and s\n[HR-209_remote_work_emea.md::structure_aware::2] policy=HR-209 section=2 score=0.706: ## 2. Public Holiday Interaction\n[HR-209_remote_work_emea.md::structure_aware::3] policy=HR-209 section=2.1 score=0.769: ### 2.1 Home Country Holidays  Remote employees observe the public holidays of their registered home country, not the office location of their assigned manager or team."
+        }
+      ],
+      "final_answer": "As a full-time confirmed employee in the EMEA region, you are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay you may receive [HR-203_sick_leave_emea.md::structure_aware::3]. \n\nRegarding carry-over, sick leave does not carry over between calendar years and has no cash-out value upon termination. Unused sick days are forfeited on December 31st with no exceptions [HR-203_sick_leave_emea.md::structure_aware::8]. This policy applies regardless of your remote work status, as the addendum for remote work does not modify carry-over caps [HR-209_remote_work_emea.md::structure_aware::6].",
+      "citations": [
+        "HR-203_sick_leave_emea.md::structure_aware::3",
+        "HR-203_sick_leave_emea.md::structure_aware::8",
+        "HR-209_remote_work_emea.md::structure_aware::6"
+      ],
+      "stop_reason": "finished",
+      "total_seconds": 2.2509036000010383,
+      "total_cost_usd": 0.00025755,
+      "reliability_ok": true
+    },
+    {
+      "scenario_id": "s3",
+      "steps": [
+        {
+          "step_number": 1,
+          "action": "search_policy",
+          "action_input": {
+            "query": "carry-over cap",
+            "region": "AMER"
+          },
+          "observation": "[HR-211_carryover_amer.md::structure_aware::4] policy=HR-211 section=3 score=0.795: ## 3. Section 4.2 \u2014 Probationary Employee Carry-Over Cap\n[HR-211_carryover_amer.md::structure_aware::3] policy=HR-211 section=2.1 score=0.755: ### 2.1 Note on Brazil  Brazil's 30-day carry-over cap reflects statutory annual leave (f\u00e9rias) requirements and is not a company discretionary policy; it cannot be reduced by futu\n[HR-211_carryover_amer.md::structure_aware::5] policy=HR-211 section=4.2 score=0.747: ### 4.2 Probationary Carry-Over Cap  A probationary employee in AMER who is confirmed to permanent status partway through the leave year is subject to a carry-over cap of 3 days fo\n[HR-211_carryover_amer.md::structure_aware::2] policy=HR-211 section=2 score=0.725: ## 2. Revised Carry-Over Table  | Employment Status | Region | Carry-Over Cap | Effective | |---|---|---|---| | Full-time confirmed | United States | 5 days | 2026-02-01 | | Full-t\n[HR-211_carryover_amer.md::structure_aware::0] policy=HR-211 section=1 score=0.714: ## 1. Purpose  This addendum sets out annual leave carry-over caps for the AMER region, mirroring the structure of HR-207 (APAC) but with figures specific to AMER statutory require"
+        },
+        {
+          "step_number": 2,
+          "action": "search_policy",
+          "action_input": {
+            "query": "parental leave entitlement",
+            "region": "AMER"
+          },
+          "observation": "[HR-205_parental_leave_amer.md::structure_aware::9] policy=HR-205 section=4 score=0.814: ## 4. Carry-Over  Parental leave is a per-event entitlement, not an annual accrual, and therefore has no carry-over provision.\n[HR-211_carryover_amer.md::structure_aware::6] policy=HR-211 section=4 score=0.785: ## 4. Interaction with Parental Leave  Carry-over caps in this addendum do not apply to parental leave under HR-205, which is a per-event entitlement with no carry-over provision a\n[HR-205_parental_leave_amer.md::structure_aware::0] policy=HR-205 section=1 score=0.777: ## 1. Purpose  This addendum supplements the base Employee Leave Handbook for employees working in the AMER region (United States, Canada, Mexico, Brazil). It sets out parental lea\n[HR-205_parental_leave_amer.md::structure_aware::4] policy=HR-205 section=2.2 score=0.751: ### 2.2 Secondary Caregiver  Secondary caregivers are entitled to 6 weeks of paid parental leave at full salary.\n[HR-205_parental_leave_amer.md::structure_aware::2] policy=HR-205 section=2 score=0.766: ## 2. Entitlement"
+        }
+      ],
+      "final_answer": "As a full-time confirmed employee in AMER (Brazil), your parental leave entitlement as a secondary caregiver is 6 weeks of paid parental leave at full salary [HR-205_parental_leave_amer.md::structure_aware::4]. \n\nRegarding your carry-over cap, it is important to note that carry-over caps do not apply to parental leave under HR-205, as parental leave is a per-event entitlement with no carry-over provision [HR-205_parental_leave_amer.md::structure_aware::9]. Therefore, there is no carry-over cap for your parental leave.",
+      "citations": [
+        "HR-205_parental_leave_amer.md::structure_aware::4",
+        "HR-205_parental_leave_amer.md::structure_aware::9"
+      ],
+      "stop_reason": "finished",
+      "total_seconds": 1.7970025000031455,
+      "total_cost_usd": 0.00018284999999999997,
+      "reliability_ok": true
+    },
+    {
+      "scenario_id": "s4",
+      "steps": [
+        {
+          "step_number": 1,
+          "action": "search_policy",
+          "action_input": {
+            "query": "carry-over cap",
+            "region": "APAC"
+          },
+          "observation": "[HR-207_carryover_apac.md::structure_aware::4] policy=HR-207 section=4 score=0.793: ## 4. Section 4.2 \u2014 Probationary Employee Carry-Over Cap\n[HR-207_carryover_apac.md::structure_aware::5] policy=HR-207 section=4.2 score=0.746: ### 4.2 Probationary Carry-Over Cap  Notwithstanding Section 3, a probationary employee (as defined in HR-201 Section 1.2) who is confirmed to permanent status partway through the \n[HR-201_annual_leave_apac.md::structure_aware::9] policy=HR-201 section=4.1 score=0.745: ### 4.1 General Rule  Unused annual leave up to the carry-over cap specified in Section 3 may be carried into the following leave year. Any balance above the cap is forfeited on De\n[HR-201_annual_leave_apac.md::structure_aware::8] policy=HR-201 section=4 score=0.803: ## 4. Carry-Over\n[HR-207_carryover_apac.md::structure_aware::3] policy=HR-207 section=3 score=0.714: ## 3. Revised Carry-Over Table  | Employment Status | Region | Carry-Over Cap | Effective | |---|---|---|---| | Full-time confirmed | Singapore | 7 days | 2026-02-01 | | Full-time "
+        }
+      ],
+      "final_answer": "As a probationary employee in APAC (India), your carry-over cap during probation is not explicitly stated in the provided search results. However, once you are confirmed to permanent status partway through your probation, you will be subject to the carry-over cap specified for confirmed employees, which is detailed in Section 3 of the HR-207 policy. Unfortunately, the specific carry-over cap for confirmed employees in India is not provided in the search results, so that detail is missing. \n\nFor further clarification, you may want to refer to the specific HR policies or consult your HR department.",
+      "citations": [],
+      "stop_reason": "finished",
+      "total_seconds": 3.356230700002925,
+      "total_cost_usd": 0.00013229999999999996,
+      "reliability_ok": true
+    },
+    {
+      "scenario_id": "s5",
+      "steps": [
+        {
+          "step_number": 1,
+          "action": "search_policy",
+          "action_input": {
+            "query": "carry-over cap",
+            "region": "EMEA"
+          },
+          "observation": "[HR-203_sick_leave_emea.md::structure_aware::7] policy=HR-203 section=4 score=0.803: ## 4. Carry-Over\n[HR-209_remote_work_emea.md::structure_aware::6] policy=HR-209 section=4 score=0.759: ## 4. Carry-Over  This addendum does not modify carry-over caps; employees remain subject to HR-201 Section 4 and, where applicable, HR-207 for APAC-based remote arrangements.\n[HR-203_sick_leave_emea.md::structure_aware::8] policy=HR-203 section=4.1 score=0.654: ### 4.1 No Carry-Over  Sick leave does not carry over between calendar years and has no cash-out value on termination. Unused sick days are forfeited on December 31st with no excep\n[HR-203_sick_leave_emea.md::structure_aware::2] policy=HR-203 section=2 score=0.615: ## 2. Entitlement\n[HR-203_sick_leave_emea.md::structure_aware::0] policy=HR-203 section=1 score=0.576: ## 1. Purpose  This addendum supplements the base Employee Leave Handbook for employees working in the EMEA region (UK, Germany, France, UAE). It sets out sick leave entitlement, c"
+        },
+        {
+          "step_number": 2,
+          "action": "search_policy",
+          "action_input": {
+            "query": "sick leave entitlement and certification",
+            "region": "EMEA"
+          },
+          "observation": "[HR-203_sick_leave_emea.md::structure_aware::0] policy=HR-203 section=1 score=0.791: ## 1. Purpose  This addendum supplements the base Employee Leave Handbook for employees working in the EMEA region (UK, Germany, France, UAE). It sets out sick leave entitlement, c\n[HR-203_sick_leave_emea.md::structure_aware::3] policy=HR-203 section=2.1 score=0.831: ### 2.1 Standard Entitlement  Employees are entitled to 10 days of company-paid sick leave per calendar year at full salary, in addition to any statutory sick pay they may separate\n[HR-203_sick_leave_emea.md::structure_aware::8] policy=HR-203 section=4.1 score=0.732: ### 4.1 No Carry-Over  Sick leave does not carry over between calendar years and has no cash-out value on termination. Unused sick days are forfeited on December 31st with no excep\n[HR-203_sick_leave_emea.md::structure_aware::6] policy=HR-203 section=3 score=0.668: ## 3. Certification Table  | Absence Duration | Certification Required | Notice to Manager | |---|---|---| | 1 day | Self-certification | Same day | | 2\u20133 days | Self-certification\n[HR-203_sick_leave_emea.md::structure_aware::4] policy=HR-203 section=2.2 score=0.730: ### 2.2 Extended Illness  For illness extending beyond 10 days, employees move to statutory sick pay (or local equivalent) as administered by local payroll, topped up per Section 2"
+        }
+      ],
+      "final_answer": "For a 5-day absence, you are required to provide self-certification, and you must notify your manager on the same day of your absence [HR-203_sick_leave_emea.md::structure_aware::6]. \n\nRegarding the carry-over rule for sick leave, it is stated that sick leave does not carry over between calendar years and has no cash-out value upon termination. Unused sick days are forfeited on December 31st with no exceptions [HR-203_sick_leave_emea.md::structure_aware::8].",
+      "citations": [
+        "HR-203_sick_leave_emea.md::structure_aware::6",
+        "HR-203_sick_leave_emea.md::structure_aware::8"
+      ],
+      "stop_reason": "finished",
+      "total_seconds": 1.8900198999981512,
+      "total_cost_usd": 0.00018314999999999998,
+      "reliability_ok": true
+    }
+  ]
+}

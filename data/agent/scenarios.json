@@ -1,0 +1,47 @@
+[
+  {
+    "id": "s1",
+    "question": "I'm a full-time confirmed employee based in Singapore (APAC). What's my carry-over cap, and what does 'continuous service' mean for me?",
+    "region": "APAC",
+    "employment_status": "full-time confirmed",
+    "categories": ["carry_over"],
+    "cross_reference_expected": true,
+    "note": "HR-207/HR-201's carry-over sections reference 'continuous service as defined in HR-201 Section 1.2' -- a real cross-reference chase."
+  },
+  {
+    "id": "s2",
+    "question": "I'm a full-time confirmed employee in the EMEA region. What's my sick leave entitlement, and what's my carry-over situation given I'm also fully remote?",
+    "region": "EMEA",
+    "employment_status": "full-time confirmed",
+    "categories": ["sick_leave", "remote_work"],
+    "cross_reference_expected": false,
+    "note": "Two categories (sick leave + remote-work holiday interaction), no cross-reference needed -- both are self-contained in their own sections."
+  },
+  {
+    "id": "s3",
+    "question": "I'm a full-time confirmed employee in AMER (Brazil). What's my parental leave entitlement as a secondary caregiver, and my carry-over cap?",
+    "region": "AMER",
+    "employment_status": "full-time confirmed",
+    "categories": ["parental_leave", "carry_over"],
+    "cross_reference_expected": false,
+    "note": "Two categories, both directly answerable without chasing a cross-reference."
+  },
+  {
+    "id": "s4",
+    "question": "I'm a probationary employee in APAC (India). What's my carry-over cap during probation, and what happens once I'm confirmed?",
+    "region": "APAC",
+    "employment_status": "probationary",
+    "categories": ["carry_over"],
+    "cross_reference_expected": true,
+    "note": "HR-207 Section 4.2's probationary cap references 'probationary employee (as defined in HR-201 Section 1.2)' -- a real cross-reference to the definitions section."
+  },
+  {
+    "id": "s5",
+    "question": "I'm a full-time confirmed employee in EMEA. What's my sick leave certification requirement for a 5-day absence, and what's the carry-over rule for sick leave?",
+    "region": "EMEA",
+    "employment_status": "full-time confirmed",
+    "categories": ["sick_leave"],
+    "cross_reference_expected": false,
+    "note": "One category (sick leave) but two distinct facts within it (certification table + carry-over rule) -- tests whether the agent does a second, more specific search rather than stopping after the first."
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "i'm a full-time confirmed employee based in singapore (apac). what's my carry-over cap, and what does 'continuous service' mean for me?": {
+    "question": "I'm a full-time confirmed employee based in Singapore (APAC). What's my carry-over cap, and what does 'continuous service' mean for me?",
+    "answer": "As a full-time confirmed employee based in Singapore, you can carry over up to 7 days of leave due to statutory minimum requirements under the Singapore Employment Act. This is an exception to the standard 5-day cap applicable to other regions. 'Continuous service' means unbroken employment with the company, which is essential for determining eligibility for various benefits.",
+    "source": "internal_policy",
+    "citations": [
+      "HR-201_annual_leave_apac.md::structure_aware::10",
+      "HR-201_annual_leave_apac.md::structure_aware::2"
+    ],
+    "remembered_at": "2026-09-26 12:26:38"
+  },
+  "i'm a full-time confirmed employee in the emea region. what's my sick leave entitlement, and what's my carry-over situation given i'm also fully remote?": {
+    "question": "I'm a full-time confirmed employee in the EMEA region. What's my sick leave entitlement, and what's my carry-over situation given I'm also fully remote?",
+    "answer": "As a full-time confirmed employee in the EMEA region, you are entitled to 10 days of sick leave per calendar year. However, sick leave does not carry over between calendar years, and any unused sick days are forfeited on December 31st with no exceptions. This policy applies regardless of your remote work status.",
+    "source": "internal_policy",
+    "citations": [
+      "HR-203_sick_leave_emea.md::structure_aware::3",
+      "HR-203_sick_leave_emea.md::structure_aware::8"
+    ],
+    "remembered_at": "2026-09-26 12:26:53"
+  },
+  "i'm a full-time confirmed employee in amer (brazil). what's my parental leave entitlement as a secondary caregiver, and my carry-over cap?": {
+    "question": "I'm a full-time confirmed employee in AMER (Brazil). What's my parental leave entitlement as a secondary caregiver, and my carry-over cap?",
+    "answer": "As a full-time confirmed employee in AMER (Brazil), you are entitled to 6 weeks of paid parental leave at full salary as a secondary caregiver. Additionally, parental leave is a per-event entitlement and does not have a carry-over provision, meaning there is no carry-over cap applicable to this leave.",
+    "source": "internal_policy",
+    "citations": [
+      "HR-205_parental_leave_amer.md::structure_aware::4",
+      "HR-205_parental_leave_amer.md::structure_aware::9"
+    ],
+    "remembered_at": "2026-09-26 12:27:07"
+  },
+  "i'm a full-time confirmed employee in emea. what's my sick leave certification requirement for a 5-day absence, and what's the carry-over rule for sick leave?": {
+    "question": "I'm a full-time confirmed employee in EMEA. What's my sick leave certification requirement for a 5-day absence, and what's the carry-over rule for sick leave?",
+    "answer": "As a full-time confirmed employee in EMEA, for a 5-day absence due to sick leave, you are required to provide a medical certificate. Additionally, sick leave does not carry over between calendar years and has no cash-out value upon termination. Unused sick days are forfeited on December 31st with no exceptions.",
+    "source": "internal_policy",
+    "citations": [
+      "HR-203_sick_leave_emea.md::structure_aware::6",
+      "HR-203_sick_leave_emea.md::structure_aware::8"
+    ],
+    "remembered_at": "2026-09-26 12:27:33"
+  },
+  "what is reference": {
+    "question": "What is Reference",
+    "answer": "I could not find a specific definition or explanation for 'Reference' in the context of EMEA HR policies from the available HR policy corpus or external sources. Therefore, I cannot provide a clear answer.",
+    "source": "external_web",
+    "citations": [],
+    "remembered_at": "2026-09-26 12:27:50"
+  }
+}

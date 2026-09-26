@@ -43,5 +43,13 @@
     "categories": ["sick_leave"],
     "cross_reference_expected": false,
     "note": "One category (sick leave) but two distinct facts within it (certification table + carry-over rule) -- tests whether the agent does a second, more specific search rather than stopping after the first."
+  },
+  {
+    "id": "s6",
+    "question": "What is Reference",
+    "region": "EMEA",
+    "categories": ["NNull"],
+    "cross_reference_expected": true,
+    "note": "This is a test case to check how the agent handles a question that is not answerable from the provided policies. The expected behavior is for the agent to refuse to answer and indicate that the information is not available in the corpus."
   }
 ]

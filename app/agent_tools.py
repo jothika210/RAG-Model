@@ -68,12 +68,25 @@ TOOL_DESCRIPTIONS = """You have access to these tools:
    definition or rule "as defined in <policy> Section <x>" and you need
    that definition's exact wording before you can answer confidently.
 
-3. finish(summary: string, citations: list of chunk_id strings)
+3. web_search(query: string)
+   Searches the open web (DuckDuckGo). Use this ONLY AFTER you have already
+   tried search_policy and/or get_chunk and confirmed the HR policy corpus
+   does not cover the question -- NEVER for a question that is clearly
+   about our own HR policy (carry-over, sick leave, parental leave, etc.),
+   since the corpus is the only trustworthy source for those. Every result
+   is tagged "[EXTERNAL WEB]" -- when you cite anything from this tool in
+   your final answer, you MUST make clear it came from the open web, not
+   from company policy.
+
+4. finish(summary: string, citations: list of chunk_id strings)
    Ends the task. `summary` is your final answer to the user's question,
    citing every claim. `citations` lists every chunk_id you actually used
-   to support the summary. Call this only when you have enough information
-   to answer completely, or when you have determined the question cannot
-   be fully answered from the corpus.
+   to support the summary (or, if your answer came from web_search, note
+   that explicitly in the summary text itself instead of a chunk_id).
+   Call this only when you have enough information to answer completely,
+   or when you have determined the question cannot be answered at all
+   (neither the corpus nor the web has a real answer) -- in that case,
+   say so honestly in `summary` rather than guessing.
 
 Respond with EXACTLY this format on every turn, nothing else:
 Thought: <your reasoning about what to do next>

@@ -7,3 +7,4 @@ httpx
 pydantic
 pytest
 rank_bm25
+ddgs
